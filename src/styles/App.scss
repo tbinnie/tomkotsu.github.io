@@ -25,7 +25,7 @@ body {
 }
 
 .navbar {
-  width: 100vw;
+  min-width: 100vw;
   display: flex;
   justify-content: left;
   height: 6%;
@@ -41,18 +41,11 @@ a {
   text-decoration: none;
 }
 
-.image-holder {
-  position: fixed;
-  border: 2px solid red;
-  bottom: 0;
-  right: 0;
-}
-
 .boids {
   height: 50vh;
   width: auto;
   position: absolute;
-  bottom: 0;
+  bottom: 20vh;
   right: 1vh;
   overflow: hidden;
   margin: 0;
@@ -66,32 +59,55 @@ a {
   padding-left: 10vw;
   margin: 0;
   align-content: center;
-  height: 50vw;
-  border: 2px solid red;
+  height: 80vh;
 }
 
 .yellow-text {
   color: $kentoYellow;
 }
 
-.skills {
+.about {
   background-color: $kentoOrange;
-  justify-content: center;
-  padding: 2% 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  padding: 0 10vw;
+  
+  min-height: 100vh;
 }
+
+.about h1 {
+  font-size: 4rem;
+}
+
+.info {
+  font-size: 1.5rem;
+}
+
 .skill-list {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 20px;
+  gap: 4rem;
   justify-items: center;
 }
 
 .skill-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 200px;
   width: 150px;
-  border: 6px solid white;
+  background-color: white;
   border-radius: 10px;
+  padding: auto;
+  border: 6px solid $kentoBlue;
+}
+
+.skill-box img {
+  height: 120px;
+  width: auto;
 }
 
 .projects {
@@ -101,12 +117,53 @@ a {
   display: grid;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
+  height: 100vh;
 }
 
 .contact {
   background-color: $kentoGreen;
-  font-size: 3rem;
+  font-size: 2rem;
   display: grid;
-  justify-content: center;
+  justify-items: center;
+  padding-bottom: 100px;
+  position: relative;
 
+}
+
+.contactBtns {
+  display: flex;
+  gap: 30px;
+}
+
+.contactBtns button {
+  color: white;
+  font-size: 2rem;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  background-color: $kentoGreen;
+  border: 10px solid white;
+  cursor: pointer;
+}
+
+.contact-btn {
+  height: 80px;
+  width: auto;
+}
+
+.sunman {
+  position: absolute;
+  height: 300px;
+  width: auto;
+  right: 10%;
+  bottom: 300px;
+}
+
+.palletbug {
+  position: absolute;
+  height: 200px;
+  width: auto;
+  left: 10%;
+  bottom: 150px;
+  transform: rotate(40deg);
 }
