@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/portfolio-site/static/css/main.f2839c48.css",
+    "main.js": "/portfolio-site/static/js/main.dd3ea694.js",
+    "static/media/little-sun-man.png": "/portfolio-site/static/media/little-sun-man.6922947e16b9bedfb482.png",
+    "static/media/pallet-bug.png": "/portfolio-site/static/media/pallet-bug.be07c90d6cb8d7ade3e5.png",
+    "static/media/birdsfromtree.png": "/portfolio-site/static/media/birdsfromtree.58d55ccfc3ae55f7bc5e.png",
+    "static/media/sass-icon.svg": "/portfolio-site/static/media/sass-icon.02dda4cb70eb34023b9a05eecd50e50e.svg",
+    "static/media/html-icon.svg": "/portfolio-site/static/media/html-icon.4395a089ee4b1338c0e94e212b6dd055.svg",
+    "static/media/python-icon.svg": "/portfolio-site/static/media/python-icon.a38e5657954f1678f7dfd5ab286abb04.svg",
+    "static/media/cv-icon.svg": "/portfolio-site/static/media/cv-icon.c4ddd3662a3e2d7917f0b9c367579242.svg",
+    "static/media/webpack-icon.svg": "/portfolio-site/static/media/webpack-icon.fcd21a766fad377c73202183aaed4f32.svg",
+    "static/media/css-icon.svg": "/portfolio-site/static/media/css-icon.aec31ad6887c3a820a1b3b8e2b9d9937.svg",
+    "index.html": "/portfolio-site/index.html",
+    "static/media/vscode-icon.svg": "/portfolio-site/static/media/vscode-icon.ccdcf4067a67bc77d69f2c0fb9b3ab24.svg",
+    "static/media/js-icon.svg": "/portfolio-site/static/media/js-icon.c9f0a72ec86ab6de952b107f64e32cc9.svg",
+    "static/media/email-icon.svg": "/portfolio-site/static/media/email-icon.0043bd8830a85966d6d63f59672c5966.svg",
+    "static/media/git-icon.svg": "/portfolio-site/static/media/git-icon.da7cbb7e0f60abd807f4ef40cc3da768.svg",
+    "static/media/django-icon.svg": "/portfolio-site/static/media/django-icon.2a493b29f6ffd954e4df3cfc5e6ca9f6.svg",
+    "static/media/linkedin-icon.svg": "/portfolio-site/static/media/linkedin-icon.399c384362892fd75f2b89a3b4e18a51.svg",
+    "static/media/github-icon.svg": "/portfolio-site/static/media/github-icon.e416f42ba081ddd2602d9773bea16c16.svg",
+    "static/media/sql-icon.svg": "/portfolio-site/static/media/sql-icon.57b0ee836c8e986ce82f487a338d2ec9.svg",
+    "static/media/npm-icon.svg": "/portfolio-site/static/media/npm-icon.3105854e2a9d8a2e5167e7fac4f54901.svg",
+    "static/media/React-icon.svg": "/portfolio-site/static/media/React-icon.928f956d9c8ebcffb98a8e917154a81a.svg",
+    "main.f2839c48.css.map": "/portfolio-site/static/css/main.f2839c48.css.map",
+    "main.dd3ea694.js.map": "/portfolio-site/static/js/main.dd3ea694.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2839c48.css",
+    "static/js/main.dd3ea694.js"
+  ]
+}
