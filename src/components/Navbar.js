@@ -3,11 +3,11 @@ import React from "react";
 const Navbar = (props) => {
     return (
         <div className="navbar">
-            <div>Top</div>
-            <div>Skills</div>
-            <div className="yellow-text">Projects</div>
-            <div>Contact</div>
-            <div>Theme</div>
+            <a href="#home">Top</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects" className="yellow-text">Projects</a>
+            <a href="#contact">Contact</a>
+            <a>Theme</a>
         </div>
     )
 }

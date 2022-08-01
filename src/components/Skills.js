@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = (props) => {
   return (
-    <div className="skills">
+    <div className="skills" id="skills">
       <h1>Skills</h1>
       <div className="skill-list">
         <div className="skill-box">React</div>
@@ -15,6 +15,8 @@ const Skills = (props) => {
         <div className="skill-box">NPM</div>
         <div className="skill-box">Webpack</div>
         <div className="skill-box">VSCode</div>
+        <div className="skill-box">Django</div>
+        <div className="skill-box">Sass</div>
       </div>
     </div>
   );
