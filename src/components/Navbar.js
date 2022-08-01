@@ -5,8 +5,9 @@ const Navbar = (props) => {
         <div className="navbar">
             <div>Top</div>
             <div>Skills</div>
-            <div>Projects</div>
+            <div className="yellow-text">Projects</div>
             <div>Contact</div>
+            <div>Theme</div>
         </div>
     )
 }

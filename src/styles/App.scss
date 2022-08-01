@@ -1,0 +1,58 @@
+@import './variables';
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: $kentoBlue;
+  color: white;
+  display: grid;
+  grid-template-rows: 2fr 10fr 6fr 6fr;
+  min-width: 100vw;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.navbar {
+  width: 100vw;
+  display: flex;
+  justify-content: left;
+  gap: 5vw;
+  padding: 10px 10vw;
+  font-size: 1.5rem;
+}
+
+.hero {
+  font-size: 4rem;
+  display: grid;
+  justify-content: left;
+  margin-left: 10vw;
+}
+
+.yellow-text {
+  color: $kentoYellow;
+}
+
+.skills {
+  background-color: $kentoOrange;
+}
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.skill-box {
+  height: 40px;
+  width: 40px;
+  border: 2px solid $kentoBlue;
+  border-radius: 10px;
+}
