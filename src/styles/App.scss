@@ -17,7 +17,8 @@ body {
 }
 
 .App {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
 *, *::before, *::after {
@@ -25,14 +26,15 @@ body {
 }
 
 .navbar {
-  min-width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: left;
   height: 6%;
   gap: 5vw;
   padding: 10px 10vw;
   font-size: 1.5rem;
-  position: fixed;
+  position: sticky;
+  top: 0;
   background-color: $kentoBlue;
 }
 
@@ -45,7 +47,7 @@ a {
   height: 50vh;
   width: auto;
   position: absolute;
-  bottom: 20vh;
+  bottom: 14vh;
   right: 1vh;
   overflow: hidden;
   margin: 0;
@@ -55,10 +57,8 @@ a {
 .hero {
   font-size: 4rem;
   display: grid;
-  justify-content: left;
   padding-left: 10vw;
   margin: 0;
-  align-content: center;
   height: 80vh;
 }
 
@@ -70,7 +70,6 @@ a {
   background-color: $kentoOrange;
   display: flex;
   flex-direction: column;
-  justify-items: center;
   text-align: center;
   padding: 0 10vw;  
   min-height: 100vh;
@@ -98,15 +97,22 @@ a {
   align-items: center;
   height: 200px;
   width: 150px;
-  background-color: white;
   border-radius: 10px;
   padding: auto;
-  border: 6px solid $kentoBlue;
 }
 
 .skill-box img {
   height: 120px;
   width: auto;
+  filter: grayscale(10%);
+  opacity: 50%;
+  transition: all .2s ease-in-out;
+}
+
+.skill-box img:hover {
+  opacity: 100%;
+  filter: grayscale(0%);
+  transform: scale(1.1);
 }
 
 .projects {
@@ -160,7 +166,7 @@ a {
 
 .palletbug {
   position: absolute;
-  height: 200px;
+  height: 100px;
   width: auto;
   left: 10%;
   bottom: 150px;

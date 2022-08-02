@@ -4,19 +4,17 @@ import birds from "../imgs/birdsfromtree.png";
 const Hero = (props) => {
   return (
     <div className="hero">
-      <div className="name">
+      <div>
         <h1>
           <span className="yellow-text">Tom</span> Binnie
         </h1>
       </div>
-      <div className="job-title">
+      <div>
         <h1 className="hero-title">
           Web<span className="yellow-text"> Developer</span>
         </h1>
       </div>
-      <div className="image-holder">
-        <img src={birds} className="boids" alt="white tree with birds flying"/>
-      </div>
+      <img src={birds} className="boids" alt="white tree with birds flying" />
     </div>
   );
 };
