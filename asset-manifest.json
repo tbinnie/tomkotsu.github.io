@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-site/static/css/main.3b4cf1b7.css",
-    "main.js": "/portfolio-site/static/js/main.3fe2bfc1.js",
+    "main.css": "/portfolio-site/static/css/main.8f4f95d5.css",
+    "main.js": "/portfolio-site/static/js/main.0b840d65.js",
     "static/media/little-sun-man.png": "/portfolio-site/static/media/little-sun-man.6922947e16b9bedfb482.png",
     "static/media/pallet-bug.png": "/portfolio-site/static/media/pallet-bug.be07c90d6cb8d7ade3e5.png",
     "static/media/birdsfromtree.png": "/portfolio-site/static/media/birdsfromtree.58d55ccfc3ae55f7bc5e.png",
@@ -22,11 +22,11 @@
     "static/media/sql-icon.svg": "/portfolio-site/static/media/sql-icon.57b0ee836c8e986ce82f487a338d2ec9.svg",
     "static/media/npm-icon.svg": "/portfolio-site/static/media/npm-icon.3105854e2a9d8a2e5167e7fac4f54901.svg",
     "static/media/React-icon.svg": "/portfolio-site/static/media/React-icon.928f956d9c8ebcffb98a8e917154a81a.svg",
-    "main.3b4cf1b7.css.map": "/portfolio-site/static/css/main.3b4cf1b7.css.map",
-    "main.3fe2bfc1.js.map": "/portfolio-site/static/js/main.3fe2bfc1.js.map"
+    "main.8f4f95d5.css.map": "/portfolio-site/static/css/main.8f4f95d5.css.map",
+    "main.0b840d65.js.map": "/portfolio-site/static/js/main.0b840d65.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b4cf1b7.css",
-    "static/js/main.3fe2bfc1.js"
+    "static/css/main.8f4f95d5.css",
+    "static/js/main.0b840d65.js"
   ]
 }
