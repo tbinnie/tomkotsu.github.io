@@ -2,7 +2,7 @@
   "name": "portfolio-site",
   "version": "0.2.0",
   "private": true,
-  "homepage": "https://tomkotsu.github.io/portfolio-site",
+  "homepage": "https://tomkotsu.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
