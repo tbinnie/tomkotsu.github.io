@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.836289c2.css",
-    "main.js": "/static/js/main.c6b26751.js",
-    "static/media/pallet-bug.png": "/static/media/pallet-bug.be07c90d6cb8d7ade3e5.png",
+    "main.css": "/static/css/main.f081bc5e.css",
+    "main.js": "/static/js/main.2fb2c7d9.js",
     "static/media/sass-icon.svg": "/static/media/sass-icon.159be4382d991ef87758763f5824456b.svg",
     "static/media/html-icon.svg": "/static/media/html-icon.6d6656136392a76e99a300a46b5144ed.svg",
     "static/media/python-icon.svg": "/static/media/python-icon.b7fd192750fb8621711d708e49bedc3a.svg",
@@ -20,11 +19,11 @@
     "static/media/sql-icon.svg": "/static/media/sql-icon.05db41975edbc44fcba32b070405cfbc.svg",
     "static/media/npm-icon.svg": "/static/media/npm-icon.364f64457345eaf38c0ef7ae208b1ee6.svg",
     "static/media/React-icon.svg": "/static/media/React-icon.d65355ccb0d25891fbfc2bd26992d1d9.svg",
-    "main.836289c2.css.map": "/static/css/main.836289c2.css.map",
-    "main.c6b26751.js.map": "/static/js/main.c6b26751.js.map"
+    "main.f081bc5e.css.map": "/static/css/main.f081bc5e.css.map",
+    "main.2fb2c7d9.js.map": "/static/js/main.2fb2c7d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.836289c2.css",
-    "static/js/main.c6b26751.js"
+    "static/css/main.f081bc5e.css",
+    "static/js/main.2fb2c7d9.js"
   ]
 }
