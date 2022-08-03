@@ -1,41 +1,47 @@
-@import './variables';
+@import "./variables";
 
 html {
   font-size: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  min-height: 100vh;
 }
 
 body {
   margin: 0px;
-  padding: 0px;
   min-height: 100vh;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: $kentoBlue;
   color: white;
-
 }
 
 .App {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  width: auto;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 .navbar {
   width: 100%;
-  display: flex;
-  justify-content: left;
-  height: 6%;
-  gap: 5vw;
-  padding: 10px 10vw;
-  font-size: 1.5rem;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
   background-color: $kentoBlue;
+  min-height: 6%;
+  padding: 10px 10vw;
+}
+
+.navbar__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  gap: 5vw;
+  font-size: 1.5rem;
 }
 
 a {
@@ -43,23 +49,36 @@ a {
   text-decoration: none;
 }
 
-.boids {
-  height: 50vh;
-  width: auto;
-  position: absolute;
-  bottom: 14vh;
-  right: 1vh;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
+
 
 .hero {
-  font-size: 4rem;
-  display: grid;
+  width: 100%;
   padding-left: 10vw;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.hero__wrapper {
+  font-size: 4rem;
+  margin-top: 15rem;
+  justify-content: left;
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.name-title,
+.job-title {
   margin: 0;
-  height: 80vh;
+  padding: 0;
 }
 
 .yellow-text {
@@ -68,45 +87,58 @@ a {
 
 .about {
   background-color: $kentoOrange;
+  padding: 0 10vw;
+  width: 100%;
+}
+
+.about__wrapper {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto  ;
   text-align: center;
-  padding: 0 10vw;  
-  min-height: 100vh;
 }
 
 .about h1 {
   font-size: 4rem;
 }
 
+.intro__wrapper {
+  margin: auto;
+  max-width: 50rem;
+}
+
 .info {
   font-size: 1.5rem;
+  text-align: left;
 }
 
 .skill-list {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 4rem;
+  gap: 2rem;
   justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .skill-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
-  width: 150px;
+  min-height: 200px;
+  max-width: 150px;
   border-radius: 10px;
   padding: auto;
 }
 
 .skill-box img {
-  height: 120px;
-  width: auto;
+  max-height: 120px;
+  max-width: auto;
   filter: grayscale(10%);
   opacity: 50%;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .skill-box img:hover {
@@ -120,9 +152,7 @@ a {
   background-color: white;
   color: $kentoBlue;
   display: grid;
-  grid-template-rows: 1fr 1fr;
   justify-items: center;
-  height: 100vh;
 }
 
 .contact {
@@ -132,19 +162,18 @@ a {
   justify-items: center;
   padding-bottom: 100px;
   position: relative;
-
 }
 
 .contactBtns {
   display: flex;
-  gap: 30px;
+  gap: 2rem;
 }
 
 .contactBtns button {
   color: white;
   font-size: 2rem;
-  height: 15vh;
-  width: 15vh;
+  min-height: 15vh;
+  max-width: 15vh;
   border-radius: 50%;
   background-color: $kentoGreen;
   border: 10px solid white;
@@ -152,23 +181,13 @@ a {
 }
 
 .contact-btn {
-  height: 80px;
-  width: auto;
+  max-height: 4rem;
+  width: 4rem;
 }
 
-.sunman {
-  position: absolute;
-  height: 300px;
-  width: auto;
-  right: 10%;
-  bottom: 300px;
-}
-
-.palletbug {
-  position: absolute;
-  height: 100px;
-  width: auto;
-  left: 10%;
-  bottom: 150px;
-  transform: rotate(40deg);
+@media (max-width: 600px) {
+  .skill-box img {
+    filter: grayscale(0%);
+    opacity: 100%;
+  }
 }

@@ -3,13 +3,10 @@ import emailIcon from "../imgs/contact-icons/email-icon.svg";
 import linkedinIcon from "../imgs/contact-icons/linkedin-icon.svg";
 import cvIcon from "../imgs/contact-icons/cv-icon.svg";
 import githubIcon from "../imgs/contact-icons/github-icon.svg";
-import sunMan from "../imgs/little-sun-man.png";
-import palletBug from "../imgs/pallet-bug.png";
+
 const Contact = (props) => {
   return (
     <div className="contact" id="contact">
-      <img src={sunMan} className="sunman" />
-      <img src={palletBug} className="palletbug" />
       <h1>Contact</h1>
       <div className="contactBtns">
         <button>
