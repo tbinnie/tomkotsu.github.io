@@ -10,10 +10,10 @@ const Contact = (props) => {
       <div className="contact__wrapper">
         <h1>Contact</h1>
         <div className="contactBtns">
-          <img src={emailIcon} />
+          <a href="mailto:tombinnie@protonmail.com"><img src={emailIcon} /></a>
           <img src={cvIcon} />
-          <img src={githubIcon} />
-          <img src={linkedinIcon} />
+          <a href="https://github.com/tomkotsu" target="_blank"><img src={githubIcon} /></a>
+          <a href="https://www.linkedin.com/in/tom-binnie/" target="_blank"><img src={linkedinIcon} /></a>
         </div>
       </div>
     </section>
