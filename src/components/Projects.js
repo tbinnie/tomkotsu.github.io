@@ -2,12 +2,12 @@ import React from "react";
 
 const Projects = (props) => {
   return (
-    <div className="projects" id="projects">
-      <h1>Projects</h1>
-      <div className="projects-panel">
+    <section className="projects" id="projects">
+      <div className="projects__wrapper">
+        <h1>Projects</h1>
         <h1>Coming Soon</h1>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -9,15 +9,16 @@ html {
 
 body {
   margin: 0px;
-  min-height: 100vh;
+  height: 100%;
   font-family: "Poppins", sans-serif;
   background-color: $kentoBlue;
   color: white;
+  max-width: 100%;
 }
 
 .App {
   display: grid;
-  width: auto;
+  width: 100%;
 }
 
 *,
@@ -27,19 +28,20 @@ body {
 }
 
 .navbar {
-  width: 100%;
-  position: fixed;
+  max-width: 100%;
+  position: sticky;
   top: 0;
   left: 0;
   background-color: $kentoBlue;
   min-height: 6%;
   padding: 10px 10vw;
+  z-index: 1;
 }
 
 .navbar__wrapper {
   display: flex;
   justify-content: center;
-  margin-inline: auto;
+  margin: auto;
   gap: 5vw;
   font-size: 1.5rem;
 }
@@ -53,15 +55,17 @@ a {
 
 .hero {
   width: 100%;
-  padding-left: 10vw;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 10rem;
+  padding-left: 28vw;
 
 }
 
 .hero__wrapper {
-  font-size: 4rem;
-  margin-top: 15rem;
+  font-size: 4vw;
+  display: flex;
+  flex-direction: column;
   justify-content: left;
   animation: fadeIn 3s;
 }
@@ -89,6 +93,7 @@ a {
   background-color: $kentoOrange;
   padding: 0 10vw;
   width: 100%;
+  margin: 0;
 }
 
 .about__wrapper {
@@ -97,6 +102,7 @@ a {
   margin-left: auto;
   margin-right: auto  ;
   text-align: center;
+  max-width: 50vw;
 }
 
 .about h1 {
@@ -117,7 +123,7 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 2rem;
+  grid-gap: 1vw;
   justify-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -127,18 +133,18 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 200px;
-  max-width: 150px;
+  max-height: 15vh;
+  max-width: 15vh;
   border-radius: 10px;
   padding: auto;
 }
 
 .skill-box img {
-  max-height: 120px;
-  max-width: auto;
   filter: grayscale(10%);
   opacity: 50%;
   transition: all 0.2s ease-in-out;
+  height: min(100%, 200px);
+  width: min(100%, 200px);
 }
 
 .skill-box img:hover {
@@ -148,46 +154,64 @@ a {
 }
 
 .projects {
-  font-size: 4rem;
   background-color: white;
+}
+
+.projects__wrapper {
+  margin-left: auto;
+  margin-right: auto;
   color: $kentoBlue;
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vh;
 }
 
 .contact {
   background-color: $kentoBlue;
-  font-size: 2rem;
-  display: grid;
-  justify-items: center;
   padding-bottom: 100px;
-  position: relative;
+  margin-bottom: 100px;
+  max-width: 100%;
+}
+
+.contact__wrapper {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contactBtns {
   display: flex;
   gap: 2rem;
+  justify-content: center;
+  
+  img {
+    height: 60px;
+    width: 60px;
+  }
 }
 
-.contactBtns button {
-  color: white;
-  font-size: 2rem;
-  min-height: 15vh;
-  max-width: 15vh;
-  border-radius: 50%;
-  background-color: $kentoGreen;
-  border: 10px solid white;
-  cursor: pointer;
+@media (max-width: 900px) {
+.intro__wrapper {
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
-.contact-btn {
-  max-height: 4rem;
-  width: 4rem;
-}
-
-@media (max-width: 600px) {
   .skill-box img {
     filter: grayscale(0%);
     opacity: 100%;
+  }
+
+  .skill-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5vw;
+  }
+
+  .navbar {
+    display: none;
   }
 }
