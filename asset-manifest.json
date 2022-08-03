@@ -1,10 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.99f8855b.css",
-    "main.js": "/static/js/main.9114c6f6.js",
-    "static/media/little-sun-man.png": "/static/media/little-sun-man.6922947e16b9bedfb482.png",
+    "main.css": "/static/css/main.fbaaed44.css",
+    "main.js": "/static/js/main.c14eb420.js",
     "static/media/pallet-bug.png": "/static/media/pallet-bug.be07c90d6cb8d7ade3e5.png",
-    "static/media/birdsfromtree.png": "/static/media/birdsfromtree.58d55ccfc3ae55f7bc5e.png",
     "static/media/sass-icon.svg": "/static/media/sass-icon.02dda4cb70eb34023b9a05eecd50e50e.svg",
     "static/media/html-icon.svg": "/static/media/html-icon.4395a089ee4b1338c0e94e212b6dd055.svg",
     "static/media/python-icon.svg": "/static/media/python-icon.a38e5657954f1678f7dfd5ab286abb04.svg",
@@ -22,11 +20,11 @@
     "static/media/sql-icon.svg": "/static/media/sql-icon.57b0ee836c8e986ce82f487a338d2ec9.svg",
     "static/media/npm-icon.svg": "/static/media/npm-icon.3105854e2a9d8a2e5167e7fac4f54901.svg",
     "static/media/React-icon.svg": "/static/media/React-icon.928f956d9c8ebcffb98a8e917154a81a.svg",
-    "main.99f8855b.css.map": "/static/css/main.99f8855b.css.map",
-    "main.9114c6f6.js.map": "/static/js/main.9114c6f6.js.map"
+    "main.fbaaed44.css.map": "/static/css/main.fbaaed44.css.map",
+    "main.c14eb420.js.map": "/static/js/main.c14eb420.js.map"
   },
   "entrypoints": [
-    "static/css/main.99f8855b.css",
-    "static/js/main.9114c6f6.js"
+    "static/css/main.fbaaed44.css",
+    "static/js/main.c14eb420.js"
   ]
 }
