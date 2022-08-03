@@ -4,12 +4,14 @@ const Hero = (props) => {
   return (
     <section className="hero">
       <div className="hero__wrapper">
-        <h1 className="name-title">
-          <span className="yellow-text">Tom</span> Binnie
-        </h1>
-        <h1 className="job-title">
-          Web<span className="yellow-text"> Developer</span>
-        </h1>
+        <div className="name__wrapper">
+          <h1 className="first-name yellow-text">tom</h1>
+          <h1 className="last-name">binnie</h1>
+        </div>
+        <div className="title__wrapper">
+          <h1 className="web-title">web </h1>
+          <h1 className="dev-title yellow-text"> developer</h1>
+        </div>
       </div>
     </section>
   );

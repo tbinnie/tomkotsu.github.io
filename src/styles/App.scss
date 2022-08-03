@@ -27,6 +27,18 @@ body {
   box-sizing: inherit;
 }
 
+.side-btn {
+  position: fixed;
+  border-radius: 50%;
+  height: 5vh;
+  width: 5vh;
+  top: 5vh;
+  right: 10vw;
+  background-color: $kentoYellow;
+  border: none;
+
+}
+
 .navbar {
   max-width: 100%;
   position: sticky;
@@ -51,22 +63,24 @@ a {
   text-decoration: none;
 }
 
-
-
 .hero {
   width: 100%;
+  min-height: 80vh;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 10rem;
-  padding-left: 28vw;
-
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__wrapper {
-  font-size: 4vw;
+  font-size: 6vw;
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
+  text-align: left;
   animation: fadeIn 3s;
 }
 
@@ -79,10 +93,13 @@ a {
   }
 }
 
-.name-title,
-.job-title {
+.dev-title,
+.web-title,
+.first-name,
+.last-name {
   margin: 0;
   padding: 0;
+  display: inline-block;
 }
 
 .yellow-text {
@@ -94,15 +111,33 @@ a {
   padding: 0 10vw;
   width: 100%;
   margin: 0;
+  padding-bottom: 5vw;
 }
 
 .about__wrapper {
   display: flex;
   flex-direction: column;
   margin-left: auto;
-  margin-right: auto  ;
-  text-align: center;
+  margin-right: auto;
+  text-align: left;
   max-width: 50vw;
+}
+
+.hi {
+  animation: moveInL 3s cubic-bezier(1, 1.1, 0, 1) 0.5s 1;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+@keyframes moveInL {
+  0% {
+    transform: translate(-1000%, 0);
+    visibility: visible;
+  }
+  100% {
+    transform: translate(0%, 0);
+    visibility: visible;
+  }
 }
 
 .about h1 {
@@ -117,6 +152,10 @@ a {
 .info {
   font-size: 1.5rem;
   text-align: left;
+}
+
+.skills-title {
+  max-width: 50vw;
 }
 
 .skill-list {
@@ -187,7 +226,7 @@ a {
   display: flex;
   gap: 2rem;
   justify-content: center;
-  
+
   img {
     height: 60px;
     width: 60px;
@@ -195,10 +234,23 @@ a {
 }
 
 @media (max-width: 900px) {
-.intro__wrapper {
-  margin-left: 1px;
-  margin-right: 1px;
+  .dev-title,
+  .web-title,
+  .first-name,
+  .last-name {
+  display: block;
+  font-size: 13vw;
 }
+
+  .intro__wrapper {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+
+  .info {
+    text-align: center;
+    font-size: 0.8rem;
+  }
 
   .skill-box img {
     filter: grayscale(0%);

@@ -16,7 +16,7 @@ const About = (props) => {
     <section className="about" id="about">
       <div className="about__wrapper">
         <div className="intro__wrapper">
-          <h1>Hi.</h1>
+          <h1 className="hi">Hi.</h1>
           <p className="info">
             I'm a web developer using React, HTML and CSS to build dynamic,
             responsive sites that serve a purpose. I have experience with Python
@@ -34,7 +34,7 @@ const About = (props) => {
           </p>
         </div>
         <div className="skills__wrapper">
-          <h1>Skills</h1>
+          <h1 className="skills-title">Skills</h1>
           <div className="skill-list">
             <div className="skill-box">
               <a href="https://reactjs.org/" target="_blank">
