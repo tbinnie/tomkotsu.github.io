@@ -11,7 +11,7 @@ body {
   margin: 0px;
   height: 100%;
   font-family: "Poppins", sans-serif;
-  background-color: $kentoBlue;
+  background-color: $primaryLight;
   color: white;
   max-width: 100%;
 }
@@ -34,7 +34,7 @@ body {
   width: 5vh;
   top: 5vh;
   right: 10vw;
-  background-color: $kentoYellow;
+  background-color: $tertiaryLight;
   border: none;
   display: none;
   cursor: pointer;
@@ -43,7 +43,7 @@ body {
 
 .hb-menu {
   position: fixed;
-  background-color: $kentoYellow;
+  background-color: $tertiaryLight;
   height: 100%;
   width: 100%;
   z-index: 2;
@@ -137,11 +137,11 @@ a {
 }
 
 .yellow-text {
-  color: $kentoYellow;
+  color: $tertiaryLight;
 }
 
 .about {
-  background-color: $kentoOrange;
+  background-color: $secondaryLight;
   padding: 0 10vw;
   width: 100%;
   margin: 0;
@@ -233,7 +233,7 @@ a {
 .projects__wrapper {
   margin-left: auto;
   margin-right: auto;
-  color: $kentoBlue;
+  color: $primaryLight;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,7 +242,7 @@ a {
 }
 
 .contact {
-  background-color: $kentoBlue;
+  background-color: $primaryLight;
   padding-bottom: 100px;
   margin-bottom: 100px;
   max-width: 100%;
