@@ -36,72 +36,57 @@ const About = (props) => {
         <div className="skills__wrapper">
           <h1 className="skills-title">Skills</h1>
           <div className="skill-list">
-            <div className="skill-box">
-              <a href="https://reactjs.org/" target="_blank">
-                <img src={reactIcon} alt="react icon" />
-              </a>
-            </div>
-            <div className="skill-box">
-              <a href="https://www.javascript.com/" target="_blank">
-                <img src={jsIcon} alt="js icon" />
-              </a>
-            </div>
-            <div className="skill-box">
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-                target="_blank"
-              >
-                <img src={htmlIcon} alt="html icon" />
-              </a>
-            </div>
-            <div className="skill-box">
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-                target="_blank"
-              >
-                <img src={cssIcon} alt="css icon" />
-              </a>
-            </div>
-            <div className="skill-box">
-              <a href="https://sass-lang.com/" target="_blank">
-                <img src={sassIcon} alt="sass icon" />
-              </a>
-            </div>
-            <div className="skill-box">
-              <a href="https://webpack.js.org/" target="_blank">
-                <img src={webpackIcon} alt="webpack icon" />
-              </a>
-            </div>
-            <div className="skill-box">
-              <a href="https://www.python.org/" target="_blank">
-                <img src={pythonIcon} alt="python icon" />
-              </a>
-            </div>
-            <div className="skill-box">
-              <a href="https://www.postgresql.org/" target="_blank">
-                <img src={sqlIcon} alt="sql icon" />
-              </a>
-            </div>
-            <div className="skill-box">
-              <a href="https://www.djangoproject.com/" target="_blank">
-                <img src={djangoIcon} alt="django icon" />
-              </a>
-            </div>
-            <div className="skill-box">
-              <a href="https://www.npmjs.com/" target="_blank">
-                <img src={npmIcon} alt="npm icon" />
-              </a>
-            </div>
-            <div className="skill-box">
-              <a href="https://code.visualstudio.com/" target="_blank">
-                <img src={vscodeIcon} alt="vscode icon" />
-              </a>
-            </div>
-            <div className="skill-box">
-              <a href="https://git-scm.com/" target="_blank">
-                <img src={gitIcon} alt="git icon" />
-              </a>
-            </div>
+            <a href="https://reactjs.org/" target="_blank">
+              <img src={reactIcon} alt="react icon" />
+            </a>
+
+            <a href="https://www.javascript.com/" target="_blank">
+              <img src={jsIcon} alt="js icon" />
+            </a>
+
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="_blank"
+            >
+              <img src={htmlIcon} alt="html icon" />
+            </a>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              target="_blank"
+            >
+              <img src={cssIcon} alt="css icon" />
+            </a>
+            <a href="https://sass-lang.com/" target="_blank">
+              <img src={sassIcon} alt="sass icon" />
+            </a>
+
+            <a href="https://webpack.js.org/" target="_blank">
+              <img src={webpackIcon} alt="webpack icon" />
+            </a>
+
+            <a href="https://www.python.org/" target="_blank">
+              <img src={pythonIcon} alt="python icon" />
+            </a>
+
+            <a href="https://www.postgresql.org/" target="_blank">
+              <img src={sqlIcon} alt="sql icon" />
+            </a>
+
+            <a href="https://www.djangoproject.com/" target="_blank">
+              <img src={djangoIcon} alt="django icon" />
+            </a>
+
+            <a href="https://www.npmjs.com/" target="_blank">
+              <img src={npmIcon} alt="npm icon" />
+            </a>
+
+            <a href="https://code.visualstudio.com/" target="_blank">
+              <img src={vscodeIcon} alt="vscode icon" />
+            </a>
+
+            <a href="https://git-scm.com/" target="_blank">
+              <img src={gitIcon} alt="git icon" />
+            </a>
           </div>
         </div>
       </div>
