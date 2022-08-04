@@ -27,7 +27,7 @@ body {
   box-sizing: inherit;
 }
 
-.side-btn {
+.hb-btn {
   position: fixed;
   border-radius: 50%;
   height: 5vh;
@@ -37,6 +37,37 @@ body {
   background-color: $kentoYellow;
   border: none;
   display: none;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.hb-menu {
+  position: fixed;
+  background-color: $kentoYellow;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.hamburger__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-top: 20vh;
+  img {
+    height: 60px;
+    width: auto;
+  }
+}
+
+.hb-links {
+  display: flex;
+  flex-direction: column;
+  a {
+    font-size: 3rem;
+    text-align: center;
+  }
 }
 
 .menu-icon {
@@ -48,7 +79,6 @@ body {
   position: sticky;
   top: 0;
   left: 0;
-  background-color: $kentoBlue;
   min-height: 6%;
   padding: 10px 10vw;
   z-index: 1;
@@ -80,7 +110,7 @@ a {
 }
 
 .hero__wrapper {
-  font-size: min(6vw, 8rem);
+  font-size: min(4vw, 6rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,8 +279,10 @@ a {
     display: none;
   }
 
-  .side-btn {
-    display: inline-block;
+  .hb-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .hero {
@@ -291,5 +323,3 @@ a {
     grid-gap: 5vw;
   }
 }
-
-

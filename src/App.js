@@ -1,16 +1,15 @@
 import "./styles/App.scss";
-import SideButton from "./components/SideButton";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-
+import HbLogic from "./components/HbLogic";
 
 function App() {
   return (
     <div className="App" id="home">
-      <SideButton />
+      <HbLogic />
       <Navbar />
       <Hero />
       <About />
