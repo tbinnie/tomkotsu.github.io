@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.3273b1b9.css",
-    "main.js": "/static/js/main.7ee55b47.js",
+    "main.css": "/static/css/main.0ab911f1.css",
+    "main.js": "/static/js/main.64cbf4c1.js",
     "static/media/sass-icon.svg": "/static/media/sass-icon.f4f04f643cfab302c83fcec3a74619da.svg",
     "static/media/sql-icon.svg": "/static/media/sql-icon.00c30ec38b86d1de1b5ddc53414d2f1f.svg",
     "static/media/html-icon.svg": "/static/media/html-icon.4395a089ee4b1338c0e94e212b6dd055.svg",
+    "static/media/sun-icon.svg": "/static/media/sun-icon.36cf998e3a5a678fc476840169a5afb9.svg",
     "static/media/python-icon.svg": "/static/media/python-icon.357592422c1f975a82421bdcca44219b.svg",
     "static/media/cv-icon.svg": "/static/media/cv-icon.ff770a1a64c4eb87427d042f6d9c8a41.svg",
     "static/media/webpack-icon.svg": "/static/media/webpack-icon.41fea027abe4b31b317c66944262ea4f.svg",
@@ -21,11 +22,12 @@
     "static/media/github-icon.svg": "/static/media/github-icon.af7b39f44e3c651baf4222a8ce9e9e33.svg",
     "static/media/npm-icon.svg": "/static/media/npm-icon.8e77123b18c4b185f1e24d42020131b9.svg",
     "static/media/React-icon.svg": "/static/media/React-icon.860929d31041e2d822f12280f3629b23.svg",
-    "main.3273b1b9.css.map": "/static/css/main.3273b1b9.css.map",
-    "main.7ee55b47.js.map": "/static/js/main.7ee55b47.js.map"
+    "static/media/moon-icon.svg": "/static/media/moon-icon.c54b3daff38de0112ace7b87c20ad3ec.svg",
+    "main.0ab911f1.css.map": "/static/css/main.0ab911f1.css.map",
+    "main.64cbf4c1.js.map": "/static/js/main.64cbf4c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.3273b1b9.css",
-    "static/js/main.7ee55b47.js"
+    "static/css/main.0ab911f1.css",
+    "static/js/main.64cbf4c1.js"
   ]
 }
