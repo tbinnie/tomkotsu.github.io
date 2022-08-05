@@ -1,4 +1,6 @@
 import "./styles/App.scss";
+import { createContext, useState } from "react";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -6,16 +8,25 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import HbLogic from "./components/HbLogic";
 
+export const ThemeContext = createContext(null);
+
 function App() {
+  const [theme, setTheme] = useState("dark");
+
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  }
   return (
-    <div className="App" id="home">
-      <HbLogic />
-      <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
-    </div>
+    <ThemeContext.Provider value={{theme, toggleTheme}}>
+      <div className="App" id={theme}>
+        <HbLogic />
+        <Navbar />
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+      </div>
+    </ThemeContext.Provider>
   );
 }
 

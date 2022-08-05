@@ -18,19 +18,13 @@ const About = (props) => {
         <div className="intro__wrapper">
           <h1 className="hi">Hi.</h1>
           <p className="info">
-            I'm a web developer using React, HTML and CSS to build dynamic,
-            responsive sites that serve a purpose. I have experience with Python
-            and SQL through Data Science work, and a passion for making useful
-            stuff. I'm a web developer using React, HTML and CSS to build
-            dynamic, responsive sites that serve a purpose. I have experience
-            with Python and SQL through Data Science work, and a passion for
-            making useful stuff.
+            I'm a web developer using React, JavaScript and SASS to build dynamic,
+            responsive sites that do useful things. I'm applying my professional Data Science experience with
+            Python and SQL to learn more about the backend, too. 
             <br></br>
             <br></br>
-            I'm a web developer using React, HTML and CSS to build dynamic,
-            responsive sites that serve a purpose. I have experience with Python
-            and SQL through Data Science work, and a passion for making useful
-            stuff.
+            I want to build web applications that are not only visually pleasing and alive with animation,
+            but also benefit their users, and hopefully the planet. 🌍
           </p>
         </div>
         <div className="skills__wrapper">

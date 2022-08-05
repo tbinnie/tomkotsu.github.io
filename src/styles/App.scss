@@ -4,7 +4,7 @@ html {
   font-size: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  min-height: 100vh;
+  height: 100%;
 }
 
 body {
@@ -16,9 +16,14 @@ body {
   max-width: 100%;
 }
 
+#dark {
+  background-color: black;
+}
+
 .App {
   display: grid;
   width: 100%;
+  height: 100%;
 }
 
 *,
@@ -32,13 +37,17 @@ body {
   border-radius: 50%;
   height: 5vh;
   width: 5vh;
-  top: 5vh;
-  right: 10vw;
+  top: 20px;
+  right: 20px;
   background-color: $tertiaryLight;
   border: none;
   display: none;
   cursor: pointer;
   z-index: 3;
+}
+
+#dark .hb-btn {
+  background-color: $tertiaryDark;
 }
 
 .hb-menu {
@@ -47,6 +56,10 @@ body {
   height: 100%;
   width: 100%;
   z-index: 2;
+}
+
+#dark .hb-menu {
+  background-color: $primaryDark;
 }
 
 .hamburger__wrapper {
@@ -80,17 +93,104 @@ body {
   top: 0;
   left: 0;
   min-height: 6%;
-  padding: 10px 10vw;
+  padding: 10px 28vw;
   z-index: 1;
+  background-color: $primaryLight;
+}
+
+#dark .navbar {
+  background-color: $primaryDark;
 }
 
 .navbar__wrapper {
+  max-width: 45vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: auto;
-  gap: 5vw;
   font-size: 1.5rem;
 }
+
+.nav-left {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+}
+
+#hb-switch {
+  position: absolute;
+  top: 5vw;
+  left: 5vw;
+}
+
+.switch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+}
+
+.switch input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $kentoBlue;
+  border-radius: 34px;
+}
+
+#dark .slider {
+  background-color: $primaryLight;
+}
+
+.switch-left {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "";
+  height: 26px;
+  width: 28px;
+  left: 3px;
+  bottom: 2.5px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.sun-icon {
+  height: 80%;
+  width: auto;
+}
+
+#dark .switch-left {
+  display: none;
+}
+
+.switch-right {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 28px;
+  left: 29px;
+  bottom: 2.5px;
+  background-color: white;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#dark .switch-right {
+  display: flex;
+  background-color: $kentoYellow;
+}
+
 
 a {
   color: white;
@@ -136,8 +236,13 @@ a {
   display: inline-block;
 }
 
-.yellow-text {
+.first-name,
+.dev-title {
   color: $tertiaryLight;
+}
+
+#dark .first-name, .dev-title {
+  color: $secondaryLight;
 }
 
 .about {
@@ -146,6 +251,10 @@ a {
   width: 100%;
   margin: 0;
   padding-bottom: 5vw;
+}
+
+#dark .about {
+  background-color: $primaryDark;
 }
 
 .about__wrapper {
@@ -158,9 +267,10 @@ a {
 }
 
 .hi {
-  animation: moveInL 3s cubic-bezier(1, 1.1, 0, 1) 0.5s 1;
+  animation: moveInL 1.5s cubic-bezier(1, 1.1, 0, 1) 0.5s 1;
   animation-fill-mode: forwards;
   visibility: hidden;
+  font-size: 4rem;
 }
 
 @keyframes moveInL {
@@ -174,8 +284,8 @@ a {
   }
 }
 
-.about h1 {
-  font-size: 4rem;
+.skills-title {
+  font-size: 2rem;
 }
 
 .intro__wrapper {
@@ -227,13 +337,17 @@ a {
 }
 
 .projects {
-  background-color: white;
+  background-color: $tertiaryLight;
+}
+
+#dark .projects {
+  background-color: $secondaryDark;
 }
 
 .projects__wrapper {
   margin-left: auto;
   margin-right: auto;
-  color: $primaryLight;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -241,11 +355,22 @@ a {
   font-size: 3vh;
 }
 
+#dark .projects__wrapper {
+  color: $secondaryLight;
+} 
+
+
+
 .contact {
   background-color: $primaryLight;
   padding-bottom: 100px;
   margin-bottom: 100px;
   max-width: 100%;
+  height: 100%;
+}
+
+#dark .contact {
+  background-color: $primaryDark;
 }
 
 .contact__wrapper {
@@ -272,9 +397,7 @@ a {
     height: 100px;
     width: 100px;
   }
-}
 
-@media (max-width: 900px) {
   .navbar {
     display: none;
   }
@@ -284,7 +407,9 @@ a {
     justify-content: center;
     align-items: center;
   }
+}
 
+@media (max-width: 900px) {
   .hero {
     min-height: 70vh;
   }
@@ -297,6 +422,18 @@ a {
     font-size: 13vw;
   }
 
+  .dev-title {
+    color: white;
+  }
+
+  .web-title {
+    color: $tertiaryLight;
+  }
+
+  #dark .web-title {
+    color: $secondaryLight;
+  }
+
   .intro__wrapper {
     margin-left: 1px;
     margin-right: 1px;
@@ -304,7 +441,7 @@ a {
 
   .info {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     animation: moveInL 3s cubic-bezier(1, 1.1, 0, 1) 0.5s 1;
     animation-fill-mode: forwards;
     visibility: hidden;
@@ -313,7 +450,7 @@ a {
   .skill-list img {
     filter: grayscale(0%);
     opacity: 100%;
-    height: 50px;
+    height: 70px;
     width: auto;
   }
 
