@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a313ed4b.css",
+    "main.css": "/static/css/main.ccd4f21e.css",
     "main.js": "/static/js/main.d5525bd8.js",
     "static/media/sass-icon.svg": "/static/media/sass-icon.f4f04f643cfab302c83fcec3a74619da.svg",
     "static/media/sql-icon.svg": "/static/media/sql-icon.00c30ec38b86d1de1b5ddc53414d2f1f.svg",
@@ -23,11 +23,11 @@
     "static/media/npm-icon.svg": "/static/media/npm-icon.8e77123b18c4b185f1e24d42020131b9.svg",
     "static/media/React-icon.svg": "/static/media/React-icon.860929d31041e2d822f12280f3629b23.svg",
     "static/media/moon-icon.svg": "/static/media/moon-icon.c54b3daff38de0112ace7b87c20ad3ec.svg",
-    "main.a313ed4b.css.map": "/static/css/main.a313ed4b.css.map",
+    "main.ccd4f21e.css.map": "/static/css/main.ccd4f21e.css.map",
     "main.d5525bd8.js.map": "/static/js/main.d5525bd8.js.map"
   },
   "entrypoints": [
-    "static/css/main.a313ed4b.css",
+    "static/css/main.ccd4f21e.css",
     "static/js/main.d5525bd8.js"
   ]
 }
