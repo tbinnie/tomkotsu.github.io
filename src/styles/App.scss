@@ -17,6 +17,7 @@ body {
 }
 
 #dark {
+  transition: background-color 0.5s ease;
   background-color: black;
 }
 
@@ -47,6 +48,7 @@ body {
 }
 
 #dark .hb-btn {
+  transition: background-color 0.5s ease;
   background-color: $tertiaryDark;
 }
 
@@ -59,6 +61,7 @@ body {
 }
 
 #dark .hb-menu {
+  transition: background-color 0.5s ease;
   background-color: $primaryDark;
 }
 
@@ -99,6 +102,7 @@ body {
 }
 
 #dark .navbar {
+  transition: background-color 0.5s ease;
   background-color: $primaryDark;
 }
 
@@ -141,11 +145,12 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: $kentoBlue;
+  background-color: white;
   border-radius: 34px;
 }
 
 #dark .slider {
+  transition: background-color 0.5s ease;
   background-color: $primaryLight;
 }
 
@@ -161,6 +166,7 @@ body {
   bottom: 2.5px;
   background-color: white;
   border-radius: 50%;
+  background-color: $primaryLight;
 }
 
 .sun-icon {
@@ -188,6 +194,7 @@ body {
 
 #dark .switch-right {
   display: flex;
+  transition: background-color 0.5s ease;
   background-color: $kentoYellow;
 }
 
@@ -196,6 +203,8 @@ a {
   color: white;
   text-decoration: none;
 }
+
+// HERO
 
 .hero {
   width: 100%;
@@ -243,11 +252,16 @@ a {
 
 #dark .first-name, .dev-title {
   color: $secondaryLight;
+  transition: background-color 0.5s ease;
 }
+
+// About
+
 
 .about {
   background-color: $secondaryLight;
-  padding: 0 10vw;
+  display: flex;
+  justify-content: center;
   width: 100%;
   margin: 0;
   padding-bottom: 5vw;
@@ -255,6 +269,7 @@ a {
 
 #dark .about {
   background-color: $primaryDark;
+  transition: background-color 0.5s ease;
 }
 
 .about__wrapper {
@@ -284,10 +299,6 @@ a {
   }
 }
 
-.skills-title {
-  font-size: 2rem;
-}
-
 .intro__wrapper {
   margin: auto;
   max-width: 50rem;
@@ -296,6 +307,10 @@ a {
 .info {
   font-size: 1.5rem;
   text-align: left;
+}
+
+.skills-title {
+  font-size: 2.5rem;
 }
 
 .skills__wrapper {
@@ -309,9 +324,11 @@ a {
 .skills-title {
   margin: auto;
   max-width: 50rem;
+  flex: 1;
 }
 
 .skill-list {
+  flex: 1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -336,12 +353,15 @@ a {
   transform: scale(1.1);
 }
 
+// Projects & Contact
+
 .projects {
   background-color: $tertiaryLight;
 }
 
 #dark .projects {
   background-color: $secondaryDark;
+  transition: background-color 0.5s ease;
 }
 
 .projects__wrapper {
@@ -357,6 +377,7 @@ a {
 
 #dark .projects__wrapper {
   color: $secondaryLight;
+  transition: background-color 0.5s ease;
 } 
 
 
@@ -371,6 +392,7 @@ a {
 
 #dark .contact {
   background-color: $primaryDark;
+  transition: background-color 0.5s ease;
 }
 
 .contact__wrapper {
@@ -432,19 +454,28 @@ a {
 
   #dark .web-title {
     color: $secondaryLight;
+    transition: background-color 0.5s ease;
+  }
+
+  .about__wrapper {
+    margin: 0;
+    position: relative;
   }
 
   .intro__wrapper {
-    margin-left: 1px;
-    margin-right: 1px;
+    padding: 0;
+    margin: 0;
   }
 
   .info {
     text-align: center;
     font-size: 1.2rem;
+    margin-bottom: 20px;
     animation: moveInL 3s cubic-bezier(1, 1.1, 0, 1) 0.5s 1;
     animation-fill-mode: forwards;
     visibility: hidden;
+    margin-left: -60px;
+    margin-right: -60px;
   }
 
   .skill-list img {
@@ -458,5 +489,9 @@ a {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 5vw;
+    justify-content: center;
+    align-items: center;
+    margin-left: -40px;
+    margin-right: -40px;
   }
 }
