@@ -5,7 +5,7 @@ import htmlIcon from "../imgs/skills-icons/html-icon.svg";
 import cssIcon from "../imgs/skills-icons/css-icon.svg";
 import sassIcon from "../imgs/skills-icons/sass-icon.svg";
 import webpackIcon from "../imgs/skills-icons/webpack-icon.svg";
-import sqlIcon from "../imgs/skills-icons/sql-icon.svg";
+import tailwindIcon from "../imgs/skills-icons/tailwind-icon.svg";
 import djangoIcon from "../imgs/skills-icons/django-icon.svg";
 import npmIcon from "../imgs/skills-icons/npm-icon.svg";
 import vscodeIcon from "../imgs/skills-icons/vscode-icon.svg";
@@ -24,11 +24,12 @@ const About = (props) => {
             <br></br>
             <br></br>
             I want to build web applications that are not only visually pleasing and alive with animation,
-            but also benefit their users, and hopefully the planet. 🌍
+            but also benefit their users, and hopefully the planet.
           </p>
         </div>
+        <hr></hr>
         <div className="skills__wrapper">
-          <h1 className="skills-title">Skills</h1>
+          <h1 className="skills-title">skills</h1>
           <div className="skill-list">
             <a href="https://reactjs.org/" target="_blank">
               <img src={reactIcon} alt="react icon" />
@@ -50,6 +51,11 @@ const About = (props) => {
             >
               <img src={cssIcon} alt="css icon" />
             </a>
+            
+            <a href="https://tailwindcss.com/" target="_blank">
+              <img src={tailwindIcon} alt="tailwind icon" />
+            </a>
+
             <a href="https://sass-lang.com/" target="_blank">
               <img src={sassIcon} alt="sass icon" />
             </a>
@@ -62,9 +68,6 @@ const About = (props) => {
               <img src={pythonIcon} alt="python icon" />
             </a>
 
-            <a href="https://www.postgresql.org/" target="_blank">
-              <img src={sqlIcon} alt="sql icon" />
-            </a>
 
             <a href="https://www.djangoproject.com/" target="_blank">
               <img src={djangoIcon} alt="django icon" />

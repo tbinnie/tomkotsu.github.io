@@ -6,12 +6,12 @@ const Navbar = (props) => {
     <header className="navbar">
       <div className="navbar__wrapper">
         <div className="nav-left">
-          <a href="#home">Top</a>
-          <a href="#about">About</a>
+          <a href="#home">top</a>
+          <a href="#about">about</a>
           <a href="#projects" className="nav-projects">
-            Projects
+            projects
           </a>
-          <a href="#contact">Contact</a>
+          <a href="#contact">contact</a>
         </div>
         <Switch place="navSwitch"/>
       </div>

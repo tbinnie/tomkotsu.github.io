@@ -8,7 +8,7 @@ const Contact = (props) => {
   return (
     <section className="contact" id="contact">
       <div className="contact__wrapper">
-        <h1>Contact</h1>
+        <h1>contact</h1>
         <div className="contactBtns">
           <a href="mailto:tombinnie@protonmail.com">
             <img src={emailIcon} />

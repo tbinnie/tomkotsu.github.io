@@ -1,8 +1,10 @@
 import React from "react";
+import Switch from "./Switch";
 
 const Hero = (props) => {
   return (
     <section className="hero" id="home">
+      <Switch place="mb-hero-switch" />
       <div className="hero__wrapper">
         <div className="name__wrapper">
           <h1 className="first-name">tom</h1>

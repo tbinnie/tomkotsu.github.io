@@ -58,7 +58,23 @@ body {
   height: 100%;
   width: 100%;
   z-index: 2;
+  animation: slideIn 1s;
 }
+
+@keyframes slideIn {
+  0% {
+    width: 0%;
+    // transform: scale(.3);
+    opacity: 0;
+  }
+  
+  100% {
+    width: 100%;
+    // transform:scale(1);
+    opacity: 1;
+  }
+}
+
 
 #dark .hb-menu {
   transition: background-color 0.5s ease;
@@ -68,9 +84,8 @@ body {
 .hamburger__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   align-items: center;
-  padding-top: 20vh;
+  padding-top: 5vh;
   img {
     height: 60px;
     width: auto;
@@ -80,11 +95,19 @@ body {
 .hb-links {
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
   a {
     font-size: 3rem;
     text-align: center;
   }
+
+  :hover {
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.2);
+    color: $primaryLight;
+  }
 }
+
 
 .menu-icon {
   fill: white;
@@ -107,7 +130,7 @@ body {
 }
 
 .navbar__wrapper {
-  max-width: 45vw;
+  max-width: 42vw;
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -117,7 +140,7 @@ body {
 .nav-left {
   display: flex;
   justify-content: left;
-  gap: 20px;
+  gap: 60px;
 }
 
 #hb-switch {
@@ -206,6 +229,10 @@ a {
 
 // HERO
 
+#mb-hero-switch {
+  display: none;
+}
+
 .hero {
   width: 100%;
   min-height: 75vh;
@@ -250,7 +277,7 @@ a {
   color: $tertiaryLight;
 }
 
-#dark .first-name, .dev-title {
+#dark .first-name, #dark .dev-title {
   color: $secondaryLight;
   transition: background-color 0.5s ease;
 }
@@ -275,6 +302,7 @@ a {
 .about__wrapper {
   display: flex;
   flex-direction: column;
+  gap: 50px;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
@@ -310,7 +338,12 @@ a {
 }
 
 .skills-title {
-  font-size: 2.5rem;
+  font-size: 4rem;
+}
+
+hr {
+  width: 80%;
+  border: 1px solid white;
 }
 
 .skills__wrapper {
@@ -384,8 +417,8 @@ a {
 
 .contact {
   background-color: $primaryLight;
-  padding-bottom: 100px;
-  margin-bottom: 100px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
   max-width: 100%;
   height: 100%;
 }
@@ -432,7 +465,16 @@ a {
 }
 
 @media (max-width: 900px) {
+
+  #mb-hero-switch {
+    position: absolute;
+    display: block;
+    top: 5vw;
+    left: 5vw;
+  }
+
   .hero {
+    padding-top: 100px;
     min-height: 70vh;
   }
 
@@ -445,6 +487,10 @@ a {
   }
 
   .dev-title {
+    color: white;
+  }
+
+  #dark .dev-title {
     color: white;
   }
 
@@ -465,16 +511,15 @@ a {
   .intro__wrapper {
     padding: 0;
     margin: 0;
+    margin-left: -60px;
   }
 
   .info {
-    text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 20px;
     animation: moveInL 3s cubic-bezier(1, 1.1, 0, 1) 0.5s 1;
     animation-fill-mode: forwards;
     visibility: hidden;
-    margin-left: -60px;
     margin-right: -60px;
   }
 
