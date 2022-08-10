@@ -67,14 +67,13 @@ body {
     // transform: scale(.3);
     opacity: 0;
   }
-  
+
   100% {
     width: 100%;
     // transform:scale(1);
     opacity: 1;
   }
 }
-
 
 #dark .hb-menu {
   transition: background-color 0.5s ease;
@@ -107,7 +106,6 @@ body {
     color: $primaryLight;
   }
 }
-
 
 .menu-icon {
   fill: white;
@@ -221,7 +219,6 @@ body {
   background-color: $kentoYellow;
 }
 
-
 a {
   color: white;
   text-decoration: none;
@@ -243,6 +240,11 @@ a {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+#dark .hero {
+  transition: background-color 0.5s ease;
+  background-color: black;
 }
 
 .hero__wrapper {
@@ -277,13 +279,13 @@ a {
   color: $tertiaryLight;
 }
 
-#dark .first-name, #dark .dev-title {
+#dark .first-name,
+#dark .dev-title {
   color: $secondaryLight;
   transition: background-color 0.5s ease;
 }
 
 // About
-
 
 .about {
   background-color: $secondaryLight;
@@ -389,7 +391,12 @@ hr {
 // Projects & Contact
 
 .projects {
+  display: flex;
+  justify-content: center;
   background-color: $tertiaryLight;
+  padding-bottom: 5vw;
+  width: 100%;
+  height: 230vh;
 }
 
 #dark .projects {
@@ -405,15 +412,68 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 3vh;
+  height: 100%;
+  font-size: 2.5rem;
+  width: 50vw;
 }
 
 #dark .projects__wrapper {
   color: $secondaryLight;
   transition: background-color 0.5s ease;
-} 
+}
 
+.project-pane {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: auto;
+  margin: auto;
+  margin-top: 0;
+  img {
+    height: auto;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+  }
+}
 
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project-text {
+  font-size: 1.3rem;
+  background-color: $secondaryLight;
+  border-radius: 0 0 30px 30px;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+}
+
+#dark .project-text {
+  color: white;
+}
+
+.project-icons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.project-icon {
+  img {
+    height: 40px;
+    display: inline-block;
+    border-radius: 0;
+  }
+}
+
+.project-links {
+  text-decoration: underline;
+  display: flex;
+  gap: 2rem;
+}
 
 .contact {
   background-color: $primaryLight;
@@ -453,6 +513,10 @@ hr {
     width: 100px;
   }
 
+  .projects {
+    height: 210vh;
+  }
+
   .navbar {
     display: none;
   }
@@ -465,7 +529,6 @@ hr {
 }
 
 @media (max-width: 900px) {
-
   #mb-hero-switch {
     position: absolute;
     display: block;
@@ -523,6 +586,19 @@ hr {
     margin-right: -60px;
   }
 
+  .projects {
+    height: 160vh;
+  }
+
+  .project-pane {
+    margin-left: -100px;
+    margin-right: -100px;
+  }
+
+  .project-text {
+    font-size: 0.9rem;
+  }
+
   .skill-list img {
     filter: grayscale(0%);
     opacity: 100%;
@@ -538,5 +614,16 @@ hr {
     align-items: center;
     margin-left: -40px;
     margin-right: -40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    height: 150vh;
+  }
+
+  .project-pane {
+    margin-left: -80px;
+    margin-right: -80px;
   }
 }

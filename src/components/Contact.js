@@ -1,4 +1,6 @@
 import React from "react";
+
+import pdf from "../tb-cv.pdf";
 import emailIcon from "../imgs/contact-icons/email-icon.svg";
 import linkedinIcon from "../imgs/contact-icons/linkedin-icon.svg";
 import cvIcon from "../imgs/contact-icons/cv-icon.svg";
@@ -13,7 +15,9 @@ const Contact = (props) => {
           <a href="mailto:tombinnie@protonmail.com">
             <img src={emailIcon} />
           </a>
+          <a href={pdf} target="_blank">
           <img src={cvIcon} />
+          </a>
           <a href="https://github.com/tomkotsu" target="_blank">
             <img src={githubIcon} />
           </a>
