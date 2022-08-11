@@ -63,13 +63,13 @@ body {
 
 @keyframes slideIn {
   0% {
-    width: 0%;
+    height: 0%;
     // transform: scale(.3);
     opacity: 0;
   }
 
   100% {
-    width: 100%;
+    height: 100%;
     // transform:scale(1);
     opacity: 1;
   }
@@ -619,7 +619,7 @@ hr {
 
 @media (max-width: 600px) {
   .projects {
-    height: 150vh;
+    height: 160vh;
   }
 
   .project-pane {
