@@ -37,7 +37,7 @@ const DarumaProject = () => {
         </div>
         <p>
           Mobile-first responsive restaurant site built with React and Tailwind.
-          Clean design with interactive features leveraging hooks, Context API
+          Designed with interactive features leveraging hooks, Context API
           and JavaScript.
         </p>
         <div className="project-links">
