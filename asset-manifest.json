@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.4e92c3f5.css",
-    "main.js": "/static/js/main.ab4dd1b9.js",
+    "main.css": "/static/css/main.14011f30.css",
+    "main.js": "/static/js/main.b54da61d.js",
     "static/media/daruma-gif.gif": "/static/media/daruma-gif.9eaf7ccb658fdd1174fb.gif",
-    "static/media/fmnlogo.png": "/static/media/fmnlogo.dc7d6b6a939f4322e4e8.png",
     "static/media/tb-cv.pdf": "/static/media/tb-cv.1f2c6d5aa855b4ae4d3e.pdf",
+    "static/media/fmn-2.png": "/static/media/fmn-2.a220a626d95abc53d487.png",
     "static/media/sass-icon.svg": "/static/media/sass-icon.f4f04f643cfab302c83fcec3a74619da.svg",
     "static/media/html-icon.svg": "/static/media/html-icon.4395a089ee4b1338c0e94e212b6dd055.svg",
     "static/media/sun-icon.svg": "/static/media/sun-icon.f1d0914eb41dacb71b90151244161327.svg",
@@ -26,11 +26,11 @@
     "static/media/React-icon.svg": "/static/media/React-icon.860929d31041e2d822f12280f3629b23.svg",
     "static/media/tailwind-icon.svg": "/static/media/tailwind-icon.888712aa0cdb26d78ef4a35170a996a3.svg",
     "static/media/moon-icon.svg": "/static/media/moon-icon.c54b3daff38de0112ace7b87c20ad3ec.svg",
-    "main.4e92c3f5.css.map": "/static/css/main.4e92c3f5.css.map",
-    "main.ab4dd1b9.js.map": "/static/js/main.ab4dd1b9.js.map"
+    "main.14011f30.css.map": "/static/css/main.14011f30.css.map",
+    "main.b54da61d.js.map": "/static/js/main.b54da61d.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e92c3f5.css",
-    "static/js/main.ab4dd1b9.js"
+    "static/css/main.14011f30.css",
+    "static/js/main.b54da61d.js"
   ]
 }
