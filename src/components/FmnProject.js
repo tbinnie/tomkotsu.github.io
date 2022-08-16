@@ -1,6 +1,6 @@
 import React from "react";
 import pythonIcon from "../imgs/skills-icons/python-icon.svg";
-import fmnGif from "../imgs/fmnlogo.png";
+import fmnGif from "../imgs/fmn-2.png";
 import reactIcon from "../imgs/skills-icons/React-icon.svg";
 
 import tailwindIcon from "../imgs/skills-icons/tailwind-icon.svg";

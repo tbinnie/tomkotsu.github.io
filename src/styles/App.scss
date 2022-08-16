@@ -391,12 +391,12 @@ hr {
 // Projects & Contact
 
 .projects {
-  display: flex;
+  height: auto;
   justify-content: center;
   background-color: $tertiaryLight;
   padding-bottom: 5vw;
   width: 100%;
-  height: 230vh;
+  // height: 230vh;
 }
 
 #dark .projects {
@@ -412,7 +412,8 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  gap: 4rem;
+  height: auto;
   font-size: 2.5rem;
   width: 50vw;
 }
@@ -423,10 +424,11 @@ hr {
 }
 
 .project-pane {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: auto;
   width: auto;
   margin: auto;
   margin-top: 0;
@@ -513,10 +515,6 @@ hr {
     width: 100px;
   }
 
-  .projects {
-    height: 210vh;
-  }
-
   .navbar {
     display: none;
   }
@@ -586,9 +584,6 @@ hr {
     margin-right: -60px;
   }
 
-  .projects {
-    height: 160vh;
-  }
 
   .project-pane {
     margin-left: -100px;
@@ -618,9 +613,6 @@ hr {
 }
 
 @media (max-width: 600px) {
-  .projects {
-    height: 160vh;
-  }
 
   .project-pane {
     margin-left: -80px;
