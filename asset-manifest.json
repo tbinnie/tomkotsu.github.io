@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.14011f30.css",
-    "main.js": "/static/js/main.b54da61d.js",
+    "main.js": "/static/js/main.5c955024.js",
     "static/media/daruma-gif.gif": "/static/media/daruma-gif.9eaf7ccb658fdd1174fb.gif",
-    "static/media/tb-cv.pdf": "/static/media/tb-cv.1f2c6d5aa855b4ae4d3e.pdf",
+    "static/media/tb-cv.pdf": "/static/media/tb-cv.2097fcd14561eaac466c.pdf",
     "static/media/fmn-2.png": "/static/media/fmn-2.a220a626d95abc53d487.png",
     "static/media/sass-icon.svg": "/static/media/sass-icon.f4f04f643cfab302c83fcec3a74619da.svg",
     "static/media/html-icon.svg": "/static/media/html-icon.4395a089ee4b1338c0e94e212b6dd055.svg",
@@ -27,10 +27,10 @@
     "static/media/tailwind-icon.svg": "/static/media/tailwind-icon.888712aa0cdb26d78ef4a35170a996a3.svg",
     "static/media/moon-icon.svg": "/static/media/moon-icon.c54b3daff38de0112ace7b87c20ad3ec.svg",
     "main.14011f30.css.map": "/static/css/main.14011f30.css.map",
-    "main.b54da61d.js.map": "/static/js/main.b54da61d.js.map"
+    "main.5c955024.js.map": "/static/js/main.5c955024.js.map"
   },
   "entrypoints": [
     "static/css/main.14011f30.css",
-    "static/js/main.b54da61d.js"
+    "static/js/main.5c955024.js"
   ]
 }
