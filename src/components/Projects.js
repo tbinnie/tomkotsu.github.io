@@ -10,6 +10,7 @@ const Projects = (props) => {
         <DarumaProject />
         <FmnProject />
       </div>
+      <div className="spacer layer3"></div>
     </section>
   );
 };

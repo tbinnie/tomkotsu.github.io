@@ -98,6 +98,7 @@ body {
   a {
     font-size: 3rem;
     text-align: center;
+    color: white;
   }
 
   :hover {
@@ -116,7 +117,7 @@ body {
   position: sticky;
   top: 0;
   left: 0;
-  min-height: 6%;
+  min-height: 5vh;
   padding: 10px 28vw;
   z-index: 1;
   background-color: $primaryLight;
@@ -166,7 +167,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color: $tertiaryLight;
   border-radius: 34px;
 }
 
@@ -185,9 +186,8 @@ body {
   width: 28px;
   left: 3px;
   bottom: 2.5px;
-  background-color: white;
   border-radius: 50%;
-  background-color: $primaryLight;
+  background-color: $secondaryLight;
 }
 
 .sun-icon {
@@ -220,8 +220,12 @@ body {
 }
 
 a {
-  color: white;
+  color: $tertiaryLight;;
   text-decoration: none;
+}
+
+#dark a {
+  color: white;
 }
 
 // HERO
@@ -232,14 +236,15 @@ a {
 
 .hero {
   width: 100%;
-  min-height: 75vh;
+  min-height: 60vh;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 10rem;
-  justify-content: center;
+  padding-top: 10vh;
+  justify-content: flex-end;
   align-items: center;
   display: flex;
   flex-direction: column;
+  gap: 10vh;
 }
 
 #dark .hero {
@@ -248,12 +253,18 @@ a {
 }
 
 .hero__wrapper {
+  color: $primaryDark;
   font-size: min(4vw, 6rem);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   text-align: left;
   animation: fadeIn 3s;
+}
+
+#dark .hero__wrapper {
+  transition: color 0.5s ease;
+  color: white;
 }
 
 @keyframes fadeIn {
@@ -285,15 +296,44 @@ a {
   transition: background-color 0.5s ease;
 }
 
+.spacer {
+  aspect-ratio: 960/150;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.waves {
+  background-image: url('../imgs/bg/moving-waves.svg');
+}
+
+.layer1 {
+  background-image: url('../imgs/bg/layered-waves-haikei.svg');
+}
+
+#dark .layer1 {
+  background-image: url('../imgs/bg/layered-waves-haikei-dark.svg');
+}
+
+.layer2 {
+  background-image: url('../imgs/bg/layered-waves-haikei-l2.svg');
+}
+
+.layer3 {
+  background-image: url('../imgs/bg/layered-waves-haikei-l3.svg');
+}
+
 // About
 
 .about {
   background-color: $secondaryLight;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   margin: 0;
-  padding-bottom: 5vw;
 }
 
 #dark .about {
@@ -394,7 +434,6 @@ hr {
   height: auto;
   justify-content: center;
   background-color: $tertiaryLight;
-  padding-bottom: 5vw;
   width: 100%;
   // height: 230vh;
 }
@@ -475,10 +514,13 @@ hr {
   text-decoration: underline;
   display: flex;
   gap: 2rem;
+  a {
+    color: white;
+  }
 }
 
 .contact {
-  background-color: $primaryLight;
+  background-color: $secondaryLight;
   padding-bottom: 50px;
   margin-bottom: 50px;
   max-width: 100%;
@@ -537,6 +579,7 @@ hr {
   .hero {
     padding-top: 100px;
     min-height: 70vh;
+    gap: 100px;
   }
 
   .dev-title,
@@ -548,7 +591,7 @@ hr {
   }
 
   .dev-title {
-    color: white;
+    color: $primaryDark;
   }
 
   #dark .dev-title {

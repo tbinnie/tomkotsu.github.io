@@ -87,6 +87,7 @@ const About = (props) => {
           </div>
         </div>
       </div>
+      <div className="spacer layer2"></div>
     </section>
   );
 };

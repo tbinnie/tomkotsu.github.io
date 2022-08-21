@@ -9,9 +9,9 @@ const DarumaProject = () => {
     <div className="project-pane">
       <img src={darumaGif} alt="" className="project-img" />
       <div className="project-text">
-        <div class="project-title">
+        <div className="project-title">
           <h1>Daruma Ramen </h1>
-          <div class="project-icons">
+          <div className="project-icons">
             <a
               href="https://reactjs.org/"
               target="_blank"

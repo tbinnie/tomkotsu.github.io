@@ -10,9 +10,9 @@ const FmnProject = () => {
     <div className="project-pane">
       <img src={fmnGif} alt="" className="project-img" />
       <div className="project-text">
-        <div class="project-title">
+        <div className="project-title">
           <h1>Forget-Me-Not </h1>
-          <div class="project-icons">
+          <div className="project-icons">
             <a
               href="https://reactjs.org/"
               target="_blank"
