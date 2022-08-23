@@ -15,7 +15,7 @@ const Hero = (props) => {
           <h1 className="dev-title"> developer</h1>
         </div>
       </div>
-      <div className="spacer waves"></div>
+      <div className="spacer layer1"></div>
     </section>
   );
 };

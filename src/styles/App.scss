@@ -125,7 +125,7 @@ body {
 
 #dark .navbar {
   transition: background-color 0.5s ease;
-  background-color: $primaryDark;
+  background-color: $secondaryDark;
 }
 
 .navbar__wrapper {
@@ -249,7 +249,7 @@ a {
 
 #dark .hero {
   transition: background-color 0.5s ease;
-  background-color: black;
+  background-color: $secondaryDark;
 }
 
 .hero__wrapper {
@@ -320,8 +320,16 @@ a {
   background-image: url('../imgs/bg/layered-waves-haikei-l2.svg');
 }
 
+#dark .layer2 {
+  background-image: url('../imgs/bg/layered-waves-haikei-d2.svg');
+}
+
 .layer3 {
   background-image: url('../imgs/bg/layered-waves-haikei-l3.svg');
+}
+
+#dark .layer3 {
+  background-image: url('../imgs/bg/layered-waves-haikei-d3.svg');
 }
 
 // About
