@@ -10,7 +10,7 @@ html {
 body {
   margin: 0px;
   height: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
   background-color: $primaryLight;
   color: white;
   max-width: 100%;
@@ -36,10 +36,10 @@ body {
 .hb-btn {
   position: fixed;
   border-radius: 50%;
-  height: 5vh;
-  width: 5vh;
-  top: 20px;
-  right: 20px;
+  height: 4vh;
+  width: 4vh;
+  top: 5vw;
+  right: 5vw;
   background-color: $tertiaryLight;
   border: none;
   display: none;
@@ -86,9 +86,14 @@ body {
   align-items: center;
   padding-top: 5vh;
   img {
-    height: 60px;
+    height: 50px;
     width: auto;
   }
+}
+
+.hb-contact {
+  display: flex;
+  gap: 10px;
 }
 
 .hb-links {
@@ -121,6 +126,8 @@ body {
   padding: 10px 28vw;
   z-index: 1;
   background-color: $primaryLight;
+  transition: background-color 0.5s ease;
+
 }
 
 #dark .navbar {
@@ -173,7 +180,7 @@ body {
 
 #dark .slider {
   transition: background-color 0.5s ease;
-  background-color: $primaryLight;
+  background-color: $secondaryLight;
 }
 
 .switch-left {
@@ -220,7 +227,7 @@ body {
 }
 
 a {
-  color: $tertiaryLight;;
+  color: $tertiaryLight;
   text-decoration: none;
 }
 
@@ -245,6 +252,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 10vh;
+  transition: background-color 0.5s ease;
 }
 
 #dark .hero {
@@ -255,6 +263,7 @@ a {
 .hero__wrapper {
   color: $primaryDark;
   font-size: min(4vw, 6rem);
+  font-family: "Monofett", cursive;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -296,6 +305,27 @@ a {
   transition: background-color 0.5s ease;
 }
 
+.heroBtns {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+
+  a {
+    background-color: $secondaryLight;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
 .spacer {
   aspect-ratio: 960/150;
   width: 100%;
@@ -304,32 +334,28 @@ a {
   background-size: cover;
 }
 
-.waves {
-  background-image: url('../imgs/bg/moving-waves.svg');
-}
-
 .layer1 {
-  background-image: url('../imgs/bg/layered-waves-haikei.svg');
+  background-image: url("../imgs/bg/layered-waves-haikei-light.svg");
 }
 
 #dark .layer1 {
-  background-image: url('../imgs/bg/layered-waves-haikei-dark.svg');
+  background-image: url("../imgs/bg/layered-waves-haikei-dark.svg");
 }
 
 .layer2 {
-  background-image: url('../imgs/bg/layered-waves-haikei-l2.svg');
+  background-image: url("../imgs/bg/layered-waves-haikei-l2.svg");
 }
 
 #dark .layer2 {
-  background-image: url('../imgs/bg/layered-waves-haikei-d2.svg');
+  background-image: url("../imgs/bg/layered-waves-haikei-d2.svg");
 }
 
 .layer3 {
-  background-image: url('../imgs/bg/layered-waves-haikei-l3.svg');
+  background-image: url("../imgs/bg/layered-waves-haikei-l3.svg");
 }
 
 #dark .layer3 {
-  background-image: url('../imgs/bg/layered-waves-haikei-d3.svg');
+  background-image: url("../imgs/bg/layered-waves-haikei-d3.svg");
 }
 
 // About
@@ -346,7 +372,6 @@ a {
 
 #dark .about {
   background-color: $primaryDark;
-  transition: background-color 0.5s ease;
 }
 
 .about__wrapper {
@@ -360,9 +385,7 @@ a {
 }
 
 .hi {
-  animation: moveInL 1.5s cubic-bezier(1, 1.1, 0, 1) 0.5s 1;
-  animation-fill-mode: forwards;
-  visibility: hidden;
+  animation: fadeIn 3s;
   font-size: 4rem;
 }
 
@@ -380,6 +403,7 @@ a {
 .intro__wrapper {
   margin: auto;
   max-width: 50rem;
+  animation: fadeIn 3s;
 }
 
 .info {
@@ -394,6 +418,7 @@ a {
 hr {
   width: 80%;
   border: 1px solid white;
+    animation: fadeIn 3s;
 }
 
 .skills__wrapper {
@@ -479,9 +504,17 @@ hr {
   width: auto;
   margin: auto;
   margin-top: 0;
+  a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: auto;
+    width: 100%;
+  }
   img {
     height: auto;
     width: 100%;
+    display: block;
     border-radius: 30px 30px 0 0;
   }
 }
@@ -585,39 +618,41 @@ hr {
   }
 
   .hero {
-    padding-top: 100px;
-    min-height: 70vh;
-    gap: 100px;
+    min-height: 60vh;
+    gap: 120px;
+  }
+
+  .hero__wrapper {
+    justify-content: center;
+    align-items: center;
   }
 
   .dev-title,
   .web-title,
   .first-name,
   .last-name {
-    display: block;
     font-size: 13vw;
   }
 
-  .dev-title {
-    color: $primaryDark;
-  }
-
-  #dark .dev-title {
-    color: white;
+  .first-name {
+    padding-right: 10px;
   }
 
   .web-title {
-    color: $tertiaryLight;
+    padding-right: 10px;
   }
 
   #dark .web-title {
-    color: $secondaryLight;
     transition: background-color 0.5s ease;
   }
 
   .about__wrapper {
     margin: 0;
     position: relative;
+  }
+
+  .hi {
+    font-size: 2.5rem;
   }
 
   .intro__wrapper {
@@ -629,12 +664,8 @@ hr {
   .info {
     font-size: 1rem;
     margin-bottom: 20px;
-    animation: moveInL 3s cubic-bezier(1, 1.1, 0, 1) 0.5s 1;
-    animation-fill-mode: forwards;
-    visibility: hidden;
     margin-right: -60px;
   }
-
 
   .project-pane {
     margin-left: -100px;
@@ -664,7 +695,6 @@ hr {
 }
 
 @media (max-width: 600px) {
-
   .project-pane {
     margin-left: -80px;
     margin-right: -80px;

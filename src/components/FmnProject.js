@@ -8,7 +8,9 @@ import tailwindIcon from "../imgs/skills-icons/tailwind-icon.svg";
 const FmnProject = () => {
   return (
     <div className="project-pane">
-      <img src={fmnGif} alt="" className="project-img" />
+      <a href="https://tombinnie.com/forget-me-not" target="_blank">
+        <img src={fmnGif} alt="" className="project-img" />
+      </a>
       <div className="project-text">
         <div className="project-title">
           <h1>Forget-Me-Not </h1>

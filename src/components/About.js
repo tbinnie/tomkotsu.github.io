@@ -16,7 +16,7 @@ const About = (props) => {
     <section className="about" id="about">
       <div className="about__wrapper">
         <div className="intro__wrapper">
-          <h1 className="hi">Hi.</h1>
+          <h1 className="hi">hi.</h1>
           <p className="info">
             I'm a web developer using React, JavaScript and SASS to build dynamic,
             responsive sites that do useful things. I'm applying my professional Data Science experience with

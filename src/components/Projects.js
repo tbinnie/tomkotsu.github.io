@@ -7,8 +7,9 @@ const Projects = (props) => {
     <section className="projects" id="projects">
       <div className="projects__wrapper">
         <h1>projects</h1>
-        <DarumaProject />
         <FmnProject />
+        <DarumaProject />
+
       </div>
       <div className="spacer layer3"></div>
     </section>

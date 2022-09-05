@@ -7,7 +7,9 @@ import tailwindIcon from "../imgs/skills-icons/tailwind-icon.svg";
 const DarumaProject = () => {
   return (
     <div className="project-pane">
-      <img src={darumaGif} alt="" className="project-img" />
+      <a href="https://tombinnie.com/ramen-restaurant" target="_blank">
+        <img src={darumaGif} alt="" className="project-img" />
+      </a>
       <div className="project-text">
         <div className="project-title">
           <h1>Daruma Ramen </h1>
@@ -37,8 +39,8 @@ const DarumaProject = () => {
         </div>
         <p>
           Mobile-first responsive restaurant site built with React and Tailwind.
-          Designed with interactive features leveraging hooks, Context API
-          and JavaScript.
+          Designed with interactive features leveraging hooks, Context API and
+          JavaScript.
         </p>
         <div className="project-links">
           <p>
