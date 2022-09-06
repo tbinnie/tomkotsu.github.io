@@ -294,6 +294,14 @@ a {
   display: inline-block;
 }
 
+.first-name {
+  padding-right: 30px;
+}
+
+.web-title {
+  padding-right: 30px;
+}
+
 .first-name,
 .dev-title {
   color: $tertiaryLight;
@@ -637,13 +645,26 @@ hr {
   .first-name {
     padding-right: 10px;
   }
-
+  
   .web-title {
     padding-right: 10px;
   }
+  
 
   #dark .web-title {
     transition: background-color 0.5s ease;
+  }
+
+  .heroBtns {
+    a {
+      height: 40px;
+      width: 40px;
+    }
+  
+    img {
+      height: 30px;
+      width: 30px;
+    }
   }
 
   .about__wrapper {
