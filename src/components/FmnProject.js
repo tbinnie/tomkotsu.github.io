@@ -8,7 +8,7 @@ import tailwindIcon from "../imgs/skills-icons/tailwind-icon.svg";
 const FmnProject = () => {
   return (
     <div className="project-pane">
-      <a href="https://tombinnie.com/forget-me-not" target="_blank">
+      <a href="https://main.d2mbbiwws2b0rf.amplifyapp.com/" target="_blank">
         <img src={fmnGif} alt="" className="project-img" />
       </a>
       <div className="project-text">
@@ -45,7 +45,7 @@ const FmnProject = () => {
         </p>
         <div className="project-links">
           <p>
-            <a href="https://tombinnie.com/forget-me-not" target="_blank">
+            <a href="https://main.d2mbbiwws2b0rf.amplifyapp.com/" target="_blank">
               Live Site
             </a>
           </p>

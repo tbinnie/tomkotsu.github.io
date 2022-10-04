@@ -1,18 +1,18 @@
 import React from "react";
-import darumaGif from "../imgs/daruma-gif.gif";
 import reactIcon from "../imgs/skills-icons/React-icon.svg";
 import jsIcon from "../imgs/skills-icons/js-icon.svg";
+import soundscapePic from "../imgs/soundscape.png"
 import tailwindIcon from "../imgs/skills-icons/tailwind-icon.svg";
 
-const DarumaProject = () => {
+const SoundscapeProject = () => {
   return (
     <div className="project-pane">
-      <a href="https://tombinnie.com/ramen-restaurant" target="_blank">
-        <img src={darumaGif} alt="" className="project-img" />
+      <a href="https://main.doc45pnqdai33.amplifyapp.com/" target="_blank">
+        <img src={soundscapePic} alt="" className="project-img" />
       </a>
       <div className="project-text">
         <div className="project-title">
-          <h1>Daruma Ramen </h1>
+          <h1>Soundscape </h1>
           <div className="project-icons">
             <a
               href="https://reactjs.org/"
@@ -38,19 +38,19 @@ const DarumaProject = () => {
           </div>
         </div>
         <p>
-          Mobile-first responsive restaurant site built with React and Tailwind.
-          Designed with interactive features leveraging hooks, Context API and
-          JavaScript.
+          Mobile-first responsive E-Commerce Frontend site built with React.
+          Utilises hooks in functional components to track and update the state
+          of items in the store and the user's cart. Deployed using Amazon Web Services Amplify.
         </p>
         <div className="project-links">
           <p>
-            <a href="https://tombinnie.com/ramen-restaurant" target="_blank">
+            <a href="https://main.doc45pnqdai33.amplifyapp.com/" target="_blank">
               Live Site
             </a>
           </p>
           <p>
             <a
-              href="https://github.com/tomkotsu/ramen-restaurant"
+              href="https://github.com/tomkotsu/soundscape"
               target="_blank"
             >
               Source Code
@@ -62,4 +62,4 @@ const DarumaProject = () => {
   );
 };
 
-export default DarumaProject;
+export default SoundscapeProject;

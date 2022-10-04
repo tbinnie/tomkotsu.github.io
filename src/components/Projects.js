@@ -1,5 +1,5 @@
 import React from "react";
-import DarumaProject from "./DarumaProject";
+import SoundscapeProject from "./SoundscapeProject";
 import FmnProject from "./FmnProject";
 
 const Projects = (props) => {
@@ -7,8 +7,9 @@ const Projects = (props) => {
     <section className="projects" id="projects">
       <div className="projects__wrapper">
         <h1>projects</h1>
+        <SoundscapeProject />
         <FmnProject />
-        <DarumaProject />
+
 
       </div>
       <div className="spacer layer3"></div>

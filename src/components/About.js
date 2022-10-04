@@ -16,16 +16,11 @@ const About = (props) => {
     <section className="about" id="about">
       <div className="about__wrapper">
         <div className="intro__wrapper">
-          <h1 className="hi">hi.</h1>
           <p className="info">
             I'm a web developer using React, JavaScript and SASS to build
             dynamic, responsive sites that do useful things. I'm applying my
-            professional Data Science experience with Python and SQL to learn
+            professional Data Science experience with Python and SQL, as well as learning Node.JS, to learn
             more about the backend, too.
-            <br></br>
-            <br></br>I want to build web applications that are not only visually
-            pleasing and alive with animation, but also benefit their users, and
-            hopefully the planet.
           </p>
         </div>
         <hr></hr>
