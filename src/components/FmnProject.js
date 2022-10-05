@@ -1,9 +1,8 @@
 import React from "react";
-import pythonIcon from "../imgs/skills-icons/python-icon.svg";
+import jsIcon from "../imgs/skills-icons/js-icon.svg";
 import fmnGif from "../imgs/fmn-2.png";
 import reactIcon from "../imgs/skills-icons/React-icon.svg";
-
-import tailwindIcon from "../imgs/skills-icons/tailwind-icon.svg";
+import cssIcon from "../imgs/skills-icons/css-icon.svg";
 
 const FmnProject = () => {
   return (
@@ -23,29 +22,33 @@ const FmnProject = () => {
               <img src={reactIcon} alt="react icon" />
             </a>
             <a
-              href="https://www.python.org/"
+              href="https://www.javascript.com/"
               target="_blank"
               className="project-icon"
             >
-              <img src={pythonIcon} alt="python icon" />
+              <img src={jsIcon} alt="js icon" />
             </a>
             <a
-              href="https://tailwindcss.com/"
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
               target="_blank"
               className="project-icon"
             >
-              <img src={tailwindIcon} alt="tailwind icon" />
+              <img src={cssIcon} alt="css icon" />
             </a>
           </div>
         </div>
         <p>
-          Flower Identification app made with React and Tailwind, leveraging
-          self-built computer vision AI made with TensorFlow. Django backend
-          allows users to log in and save results to their list.
+          Flower Identification app made with React, leveraging self-built
+          computer vision AI made with TensorFlow. Soon to include user
+          authentication and saved results using Node.JS/Express. Deployed using
+          AWS Amplify.
         </p>
         <div className="project-links">
           <p>
-            <a href="https://main.d2mbbiwws2b0rf.amplifyapp.com/" target="_blank">
+            <a
+              href="https://main.d2mbbiwws2b0rf.amplifyapp.com/"
+              target="_blank"
+            >
               Live Site
             </a>
           </p>

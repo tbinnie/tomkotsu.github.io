@@ -1,8 +1,8 @@
 import React from "react";
 import reactIcon from "../imgs/skills-icons/React-icon.svg";
 import jsIcon from "../imgs/skills-icons/js-icon.svg";
-import soundscapePic from "../imgs/soundscape.png"
-import tailwindIcon from "../imgs/skills-icons/tailwind-icon.svg";
+import soundscapePic from "../imgs/soundscape.png";
+import cssIcon from "../imgs/skills-icons/css-icon.svg";
 
 const SoundscapeProject = () => {
   return (
@@ -29,30 +29,31 @@ const SoundscapeProject = () => {
               <img src={jsIcon} alt="js icon" />
             </a>
             <a
-              href="https://tailwindcss.com/"
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
               target="_blank"
               className="project-icon"
             >
-              <img src={tailwindIcon} alt="tailwind icon" />
+              <img src={cssIcon} alt="css icon" />
             </a>
           </div>
         </div>
         <p>
           Mobile-first responsive E-Commerce Frontend site built with React.
           Utilises hooks in functional components to track and update the state
-          of items in the store and the user's cart. Deployed using Amazon Web Services Amplify.
+          of items in the store and the user's cart. Deployed using Amazon Web
+          Services Amplify.
         </p>
         <div className="project-links">
           <p>
-            <a href="https://main.doc45pnqdai33.amplifyapp.com/" target="_blank">
+            <a
+              href="https://main.doc45pnqdai33.amplifyapp.com/"
+              target="_blank"
+            >
               Live Site
             </a>
           </p>
           <p>
-            <a
-              href="https://github.com/tomkotsu/soundscape"
-              target="_blank"
-            >
+            <a href="https://github.com/tomkotsu/soundscape" target="_blank">
               Source Code
             </a>
           </p>
