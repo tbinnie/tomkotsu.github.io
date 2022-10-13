@@ -1,0 +1,68 @@
+#mb-hero-switch {
+  display: none;
+}
+
+
+.hero__wrapper {
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  animation: fadeIn 3s;
+}
+
+#dark .hero__wrapper {
+  transition: color 0.5s ease;
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hi {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: $tertiaryDark;
+}
+
+.name {
+  font-size: 4rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.job-title {
+  font-size: 4rem;
+  margin: 0;
+  color: $secondaryDark;
+}
+
+.intro {
+  font-size: 1.2rem;
+  max-width: 50%;
+  margin: 0;
+  margin-top: 1.5rem;
+  color: $secondaryDark;
+}
+
+
+
+@media (max-width: 900px) {
+  
+  #mb-hero-switch {
+    position: absolute;
+    display: block;
+    top: 5vw;
+    left: 5vw;
+  }
+}

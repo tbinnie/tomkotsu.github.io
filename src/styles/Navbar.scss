@@ -1,0 +1,124 @@
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 5vh;
+  padding: 2rem 4rem;
+  z-index: 100;
+  background-color: $primaryLight;
+  transition: background-color 0.5s ease;
+}
+
+#dark .navbar {
+  transition: background-color 0.5s ease;
+  background-color: $primaryDark;
+}
+
+.navbar__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-size: 1rem;
+}
+
+.logo {
+  height: 3rem;
+  width: auto;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 60px;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+#hb-switch {
+  position: absolute;
+  top: 5vw;
+  left: 5vw;
+}
+
+.switch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+}
+
+.switch input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $tertiaryLight;
+  border-radius: 34px;
+}
+
+#dark .slider {
+  transition: background-color 0.5s ease;
+  background-color: $secondaryLight;
+}
+
+.switch-left {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: '';
+  height: 26px;
+  width: 28px;
+  left: 3px;
+  bottom: 2.5px;
+  border-radius: 50%;
+  background-color: $secondaryLight;
+}
+
+.sun-icon {
+  height: 80%;
+  width: auto;
+}
+
+#dark .switch-left {
+  display: none;
+}
+
+.switch-right {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 28px;
+  left: 29px;
+  bottom: 2.5px;
+  background-color: white;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#dark .switch-right {
+  display: flex;
+  transition: background-color 0.5s ease;
+  background-color: $kentoYellow;
+}
+
+@media (max-width: 770px) {
+  .navbar {
+    display: none;
+  }
+}

@@ -1,33 +1,40 @@
-import React from "react";
+import React from 'react'
 
-import pdf from "../tb-cv.pdf";
-import emailIcon from "../imgs/contact-icons/email-icon.svg";
-import linkedinIcon from "../imgs/contact-icons/linkedin-icon.svg";
-import cvIcon from "../imgs/contact-icons/cv-icon.svg";
-import githubIcon from "../imgs/contact-icons/github-icon.svg";
+import pdf from '../tb-cv.pdf'
+import emailIcon from '../imgs/contact-icons/email-icon.svg'
+import linkedinIcon from '../imgs/contact-icons/linkedin-icon.svg'
+import cvIcon from '../imgs/contact-icons/cv-icon.svg'
+import githubIcon from '../imgs/contact-icons/github-icon.svg'
 
-const Contact = (props) => {
+const Contact = () => {
   return (
     <section className="contact" id="contact">
-      <div className="contact__wrapper">
-        <h1>contact</h1>
-        <div className="contactBtns">
-          <a href="mailto:tombinnie@protonmail.com">
-            <img src={emailIcon} />
-          </a>
-          <a href={pdf} target="_blank">
-          <img src={cvIcon} />
-          </a>
-          <a href="https://github.com/tomkotsu" target="_blank">
-            <img src={githubIcon} />
-          </a>
-          <a href="https://www.linkedin.com/in/tom-binnie/" target="_blank">
-            <img src={linkedinIcon} />
-          </a>
-        </div>
+      <h2>
+        <span className="number">03. Get In Touch?</span>
+      </h2>
+      <h1>Contact me!</h1>
+      <p>
+        I am currently actively looking for full-time Frontend Development
+        positions. I would love to hear about any opportunities, and I can be
+        contacted using the links below.
+      </p>
+      <div className="contactBtns">
+        <a href="mailto:tombinnie@protonmail.com" className='contact-link'>
+          <button className='btn'><img src={emailIcon} /> Email me!</button>
+
+        </a>
+        <a href={pdf} target="_blank" className='contact-link'>
+          <button className='btn'><img src={cvIcon} />My CV</button>
+        </a>
+        <a href="https://github.com/tomkotsu" target="_blank" className='contact-link'>
+          <button className="btn"><img src={githubIcon} />Github</button>
+        </a>
+        <a href="https://www.linkedin.com/in/tom-binnie/" target="_blank" className='contact-link'>
+          <button className='btn'><img src={linkedinIcon} />LinkedIn</button>
+        </a>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

@@ -7,6 +7,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import HbLogic from "./components/HbLogic";
+import Sidebars from "./components/Sidebars";
 
 export const ThemeContext = createContext(null);
 
@@ -21,6 +22,7 @@ function App() {
       <div className="App" id={theme}>
         <HbLogic />
         <Navbar />
+        <Sidebars />
         <Hero />
 
         <About />

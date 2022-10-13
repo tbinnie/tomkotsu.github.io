@@ -1,20 +1,15 @@
-import React from "react";
-import SoundscapeProject from "./SoundscapeProject";
-import FmnProject from "./FmnProject";
+import React from 'react'
+import SoundscapeProject from './SoundscapeProject'
+import FmnProject from './FmnProject'
 
-const Projects = (props) => {
+const Projects = props => {
   return (
     <section className="projects" id="projects">
-      <div className="projects__wrapper">
-        <h1>projects</h1>
-        <SoundscapeProject />
-        <FmnProject />
-
-
-      </div>
-      <div className="spacer layer3"></div>
+      <h1><span className='number'>02. </span>Projects</h1>
+      <SoundscapeProject />
+      <FmnProject />
     </section>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

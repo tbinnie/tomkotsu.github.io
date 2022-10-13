@@ -1,22 +1,23 @@
-import React from "react";
-import Switch from "./Switch";
+import React from 'react'
+import Switch from './Switch'
+import logo from '../imgs/yellow-bird.png'
 
-const Navbar = (props) => {
+const Navbar = () => {
   return (
     <header className="navbar">
       <div className="navbar__wrapper">
-        <div className="nav-left">
-          <a href="#home">top</a>
-          <a href="#about">about</a>
+        <img src={logo} className='logo'/>
+        <div className="nav-items">
+          <a href="#about"><span className='number'>01. </span>Skills</a>
           <a href="#projects" className="nav-projects">
-            projects
+          <span className='number'>02. </span>Projects
           </a>
-          <a href="#contact">contact</a>
+          <a href="#contact"><span className='number'>03. </span>Contact</a>
+          <Switch place="navSwitch" />
         </div>
-        <Switch place="navSwitch"/>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

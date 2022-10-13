@@ -1,0 +1,33 @@
+.contact {
+  max-width: 800px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 3s;
+  min-height: 100vh;
+}
+
+.contactBtns {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
+
+.contact-link {
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .contactBtns {
+    flex-direction: column;
+  }
+}
