@@ -18,7 +18,7 @@ const Hero = props => {
         Data Science experience with Python and SQL, as well as learning
         Node.JS, to learn more about the backend, too.
       </p>
-      <a href="#projects" className='contact-link'><button className='btn'>View my projects!</button></a>
+      <a href="#projects" className='contact-link'><button className='btn hero-btn'>View my projects!</button></a>
     </section>
   )
 }

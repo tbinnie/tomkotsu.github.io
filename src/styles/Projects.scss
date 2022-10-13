@@ -1,6 +1,6 @@
 .projects {
   max-width: 1000px;
-  margin: 0px auto;
+  margin: 0px 4.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,20 +104,8 @@
   gap: 1rem;
 }
 
-@media (max-width: 900px) {
-  .project-pane {
-    margin-left: -100px;
-    margin-right: -100px;
-  }
-
-  .project-text {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .project-pane {
-    margin-left: -80px;
-    margin-right: -80px;
+@media (max-width: 770px) {
+  .projects {
+    margin: 0 auto;
   }
 }

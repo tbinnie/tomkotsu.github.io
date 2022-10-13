@@ -2,7 +2,6 @@
   display: none;
 }
 
-
 .hero__wrapper {
   min-height: 100vh;
   max-width: 1000px;
@@ -55,14 +54,23 @@
   color: $secondaryDark;
 }
 
-
+.hero-btn {
+  margin-top: 3.5rem;
+}
 
 @media (max-width: 900px) {
-  
   #mb-hero-switch {
     position: absolute;
     display: block;
     top: 5vw;
     left: 5vw;
+  }
+
+  .job-title {
+    font-size: 3.4rem;
+  }
+
+  .intro {
+    max-width: 100%;
   }
 }

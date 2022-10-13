@@ -15,17 +15,15 @@ const Hamburger = () => {
     <div className="hb-menu">
       <Switch place="hb-switch" />
       <div className="hb-links">
-        <a href="#home" onClick={() => setHbOpen(!hbOpen)}>
-          top
-        </a>
+
         <a href="#about" onClick={() => setHbOpen(!hbOpen)}>
-          about
+          Skills
         </a>
         <a href="#projects" onClick={() => setHbOpen(!hbOpen)}>
-          projects
+          Projects
         </a>
         <a href="#contact" onClick={() => setHbOpen(!hbOpen)}>
-          contact
+          Contact
         </a>
       </div>
       <div className="hamburger__wrapper">

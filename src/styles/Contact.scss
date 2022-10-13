@@ -1,11 +1,12 @@
 .contact {
   max-width: 800px;
-  margin: 0px auto;
+  margin: 4rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 1rem;
   animation: fadeIn 3s;
   min-height: 100vh;
 }

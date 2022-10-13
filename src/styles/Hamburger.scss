@@ -5,7 +5,7 @@
   width: 4vh;
   top: 5vw;
   right: 5vw;
-  background-color: $tertiaryLight;
+  background-color: $tertiaryDark;
   border: none;
   display: none;
   cursor: pointer;
@@ -18,8 +18,10 @@
 }
 
 .hb-menu {
-  position: fixed;
-  background-color: $tertiaryLight;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $tertiaryDark;
   height: 100%;
   width: 100%;
   z-index: 2;
@@ -28,13 +30,13 @@
 
 @keyframes slideIn {
   0% {
-    height: 0%;
+    width: 0%;
     // transform: scale(.3);
     opacity: 0;
   }
 
   100% {
-    height: 100%;
+    width: 100%;
     // transform:scale(1);
     opacity: 1;
   }
