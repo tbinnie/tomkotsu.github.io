@@ -1,12 +1,13 @@
 .about {
   max-width: 1000px;
   margin: 0px auto;
+  padding-bottom: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   animation: fadeIn 3s;
-  min-height: 80vh;
+  min-height: 100vh;
 
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s,

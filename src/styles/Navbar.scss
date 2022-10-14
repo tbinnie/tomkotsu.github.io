@@ -6,13 +6,11 @@
   min-height: 5vh;
   padding: 2rem 4rem;
   z-index: 100;
-  background-color: $primaryLight;
   transition: background-color 0.5s ease;
 }
 
 #dark .navbar {
   transition: background-color 0.5s ease;
-  background-color: $primaryDark;
 }
 
 .navbar__wrapper {

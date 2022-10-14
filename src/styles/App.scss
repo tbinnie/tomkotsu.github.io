@@ -8,6 +8,7 @@
 @import './Projects.scss';
 @import './Contact.scss';
 
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -18,15 +19,16 @@ html {
 body {
   margin: 0px auto;
   height: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: $font-mono;
   background-color: $primaryLight;
-  color: white;
+  color: $primaryDark;
   max-width: 100%;
 }
 
 #dark {
   transition: background-color 0.5s ease;
   background-color: $primaryDark;
+  color: white;
 }
 
 .App {

@@ -11,6 +11,20 @@
   min-height: 100vh;
 }
 
+.touch-title {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.contact-title {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.contact-text {
+  color: $secondaryDark
+}
+
 .contactBtns {
   display: flex;
   gap: 2rem;
