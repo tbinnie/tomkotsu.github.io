@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f16e1faa.css",
-    "main.js": "/static/js/main.a604f8c4.js",
+    "main.css": "/static/css/main.d1214f6c.css",
+    "main.js": "/static/js/main.b590da11.js",
     "static/media/soundscape.png": "/static/media/soundscape.dde04d9f1dfc285f33e7.png",
     "static/media/yellow-bird.png": "/static/media/yellow-bird.765eebb685d6d0d1f3a1.png",
     "static/media/tb-cv.pdf": "/static/media/tb-cv.2097fcd14561eaac466c.pdf",
@@ -19,8 +19,8 @@
     "static/media/layered-waves-haikei-l3.svg": "/static/media/layered-waves-haikei-l3.5f51d865df355eb1dff2.svg",
     "static/media/email-icon.svg": "/static/media/email-icon.0637363f03329105d9403535fe3281d7.svg",
     "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.182918f192a8da8010e807fb9bc18e75.svg",
-    "index.html": "/index.html",
     "static/media/css-icon.svg": "/static/media/css-icon.a7b7a101c4089f293bac2952f2ef1bc8.svg",
+    "index.html": "/index.html",
     "static/media/cv-icon.svg": "/static/media/cv-icon.d118296479523fe06ae434596e91a79d.svg",
     "static/media/typescript-icon.svg": "/static/media/typescript-icon.7c2e5f599fa6ccab4be8a590908ec5bb.svg",
     "static/media/vscode-icon.svg": "/static/media/vscode-icon.36edd854993f1d49c84d9a7c24a99260.svg",
@@ -33,11 +33,11 @@
     "static/media/React-icon.svg": "/static/media/React-icon.860929d31041e2d822f12280f3629b23.svg",
     "static/media/tailwind-icon.svg": "/static/media/tailwind-icon.888712aa0cdb26d78ef4a35170a996a3.svg",
     "static/media/moon-icon.svg": "/static/media/moon-icon.c54b3daff38de0112ace7b87c20ad3ec.svg",
-    "main.f16e1faa.css.map": "/static/css/main.f16e1faa.css.map",
-    "main.a604f8c4.js.map": "/static/js/main.a604f8c4.js.map"
+    "main.d1214f6c.css.map": "/static/css/main.d1214f6c.css.map",
+    "main.b590da11.js.map": "/static/js/main.b590da11.js.map"
   },
   "entrypoints": [
-    "static/css/main.f16e1faa.css",
-    "static/js/main.a604f8c4.js"
+    "static/css/main.d1214f6c.css",
+    "static/js/main.b590da11.js"
   ]
 }
