@@ -3,7 +3,7 @@
 }
 
 .hero__wrapper {
-  min-height: 100vh;
+  min-height: 80vh;
   max-width: 1000px;
   margin: 0px auto;
   display: flex;
@@ -18,14 +18,6 @@
   color: white;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 .hi {
   font-size: 1.2rem;
@@ -61,6 +53,7 @@
 }
 
 @media (max-width: 900px) {
+
   #mb-hero-switch {
     position: absolute;
     display: block;
@@ -68,11 +61,26 @@
     left: 5vw;
   }
 
+  .hi {
+    font-size: 1rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
   .job-title {
-    font-size: 3.4rem;
+    font-size: 2.5rem;
   }
 
   .intro {
     max-width: 100%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .hero__wrapper {
+    min-height: 100vh;
   }
 }

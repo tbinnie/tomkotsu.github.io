@@ -1,6 +1,6 @@
 import React from 'react'
 import Switch from './Switch'
-import logo from '../imgs/yellow-bird.png'
+import logo from '../imgs/crane-icon.svg'
 
 const Navbar = () => {
   return (

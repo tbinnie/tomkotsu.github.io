@@ -9,7 +9,7 @@
   border: none;
   display: none;
   cursor: pointer;
-  z-index: 3;
+  z-index: 30;
 }
 
 #dark .hb-btn {
@@ -18,13 +18,13 @@
 }
 
 .hb-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  background-color: $tertiaryDark;
+  background-color: $secondaryDark;
   height: 100%;
   width: 100%;
-  z-index: 2;
+  z-index: 20;
   animation: slideIn 1s;
 }
 
