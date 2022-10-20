@@ -13,7 +13,7 @@ const Hero = props => {
         <h1 className="name">Tom Binnie.</h1>
         <h1 className="job-title">I'm a Frontend Developer.</h1>
         <p className="intro">
-          I'm using React, JavaScript, HTML and SASS to build dynamic,
+          I'm using React, JavaScript/TypeScript, HTML and CSS/SASS to build dynamic,
           responsive sites that do useful things. I'm applying my professional
           Data Science experience with Python and SQL, as well as learning
           Node.JS, to learn more about the backend, too.
