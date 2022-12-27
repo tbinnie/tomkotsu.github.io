@@ -12,9 +12,9 @@ const Projects = props => {
       <FadeInSection>
         <SoundscapeProject />
       </FadeInSection>
-      <FadeInSection>
+      {/* <FadeInSection>
         <FmnProject />
-      </FadeInSection>
+      </FadeInSection> */}
     </section>
   )
 }
